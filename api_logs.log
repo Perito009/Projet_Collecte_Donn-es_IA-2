@@ -1,0 +1,93 @@
+2025-12-15 13:38:50,771 - __main__ - ERROR - Fichier modèle non trouvé: model_classification.pkl
+2025-12-15 13:38:50,783 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2025-12-15 13:38:50,784 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 13:38:50,784 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:38:51,257 - __main__ - ERROR - Fichier modèle non trouvé: model_classification.pkl
+2025-12-15 13:38:51,262 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:38:51,268 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:47:02,579 - __main__ - ERROR - Fichier modèle non trouvé: /Model_B/model_classification.pkl
+2025-12-15 13:47:02,589 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2025-12-15 13:47:02,590 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 13:47:02,591 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:47:03,135 - __main__ - ERROR - Fichier modèle non trouvé: /Model_B/model_classification.pkl
+2025-12-15 13:47:03,139 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:47:03,140 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:48:47,848 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/ApiPredictDays.py', reloading
+2025-12-15 13:48:47,919 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:48:48,436 - __main__ - ERROR - Fichier modèle non trouvé: /Model_B/model_classification.pkl
+2025-12-15 13:48:48,440 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:48:48,441 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:48:58,748 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/ApiPredictDays.py', reloading
+2025-12-15 13:48:58,952 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:48:59,483 - __main__ - ERROR - Fichier modèle non trouvé: /Model_B/model_classification.pkl
+2025-12-15 13:48:59,491 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:48:59,492 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:49:05,791 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/ApiPredictDays.py', reloading
+2025-12-15 13:49:05,866 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:49:06,353 - __main__ - ERROR - Fichier modèle non trouvé: /Model_B/model_classification.pkl
+2025-12-15 13:49:06,357 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:49:06,357 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:49:23,591 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/ApiPredictDays.py', reloading
+2025-12-15 13:49:23,656 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:49:32,036 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-15 13:49:32,036 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-15 13:49:32,037 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-15 13:49:32,037 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-15 13:49:32,052 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-15 13:49:32,057 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:49:32,057 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:50:22,531 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/ApiPredictDays.py', reloading
+2025-12-15 13:50:22,673 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:50:23,970 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-15 13:50:23,970 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-15 13:50:23,970 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-15 13:50:23,970 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-15 13:50:23,984 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-15 13:50:23,989 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:50:23,990 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:50:33,990 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-15 13:50:33,990 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-15 13:50:33,990 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-15 13:50:33,990 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-15 13:50:34,002 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-15 13:50:34,009 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2025-12-15 13:50:34,009 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 13:50:34,010 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:50:35,271 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-15 13:50:35,271 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-15 13:50:35,271 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-15 13:50:35,271 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-15 13:50:35,287 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-15 13:50:35,291 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:50:35,292 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:51:22,832 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 13:51:22] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-15 13:51:23,156 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 13:51:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 13:51:49,189 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-15 13:51:49,190 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-15 13:51:49,190 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-15 13:51:49,190 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-15 13:51:49,202 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-15 13:51:49,209 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.130:5000
+2025-12-15 13:51:49,209 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 13:51:49,210 - werkzeug - INFO -  * Restarting with stat
+2025-12-15 13:51:50,538 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-15 13:51:50,538 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-15 13:51:50,538 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-15 13:51:50,538 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-15 13:51:50,551 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-15 13:51:50,556 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 13:51:50,556 - werkzeug - INFO -  * Debugger PIN: 515-962-584
+2025-12-15 13:53:19,058 - __main__ - INFO - Requête API: {"timestamp": "2025-12-15T13:53:19.057971", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2025-12-15 13:53:19,060 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 13:53:19] "GET /api/health HTTP/1.1" 200 -
