@@ -1,5 +1,5 @@
 import streamlit as st
-import panda as pd
+import pandas as pd
 
 st.write("NOtre Application de Panne dans les 7 jours")
 
