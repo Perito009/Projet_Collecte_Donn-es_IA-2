@@ -6,7 +6,7 @@ require_role(["technicien", "manager"])
 
 st.header("📈 Mesures des capteurs")
 
-df = pd.read_csv("energiTech_maintenance_sample.csv")
+df = pd.read_csv("df_cleaned.csv")
 
 st.subheader("Aperçu des données")
 st.dataframe(df.head(), use_container_width=True)
