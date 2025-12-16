@@ -184,3 +184,310 @@
 2025-12-16 13:36:32,027 - __main__ - INFO - Features préparées: (1, 5)
 2025-12-16 13:36:32,046 - __main__ - INFO - Prédiction réussie: ID=pred_20251216_133632_7323, Risque=Faible, Probabilité=0.073
 2025-12-16 13:36:32,047 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 13:36:32] "POST /api/predict HTTP/1.1" 200 -
+2025-12-16 14:45:37,183 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:45:37,189 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:45:37,189 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:45:37,189 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:45:37,204 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:45:37,226 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.40:5000
+2025-12-16 14:45:37,226 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 14:45:37,231 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:45:38,489 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:45:38,490 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:45:38,490 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:45:38,490 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:45:38,501 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:45:38,505 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:45:38,508 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:48:29,040 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:48:29,225 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:48:30,402 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:48:30,402 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:48:30,403 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:48:30,403 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:48:30,417 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:48:30,423 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:48:30,424 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:51:15,801 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:51:15,980 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:51:17,817 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:51:17,817 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:51:17,817 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:51:17,817 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:51:17,827 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:51:17,832 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:51:17,832 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:51:21,020 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:51:21,213 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:51:22,744 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:51:22,744 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:51:22,744 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:51:22,745 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:51:22,754 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:51:22,759 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:51:22,759 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:51:24,869 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:51:25,082 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:51:26,199 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:51:26,199 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:51:26,199 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:51:26,199 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:51:26,209 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:51:26,213 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:51:26,213 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:52:35,048 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:52:35,049 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:52:35,236 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:52:36,360 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:52:36,360 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:52:36,360 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:52:36,360 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:52:36,371 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:52:36,375 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:52:36,375 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:01,250 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:01,473 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:02,664 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:02,665 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:02,665 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:02,665 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:02,680 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:02,689 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:02,690 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:04,875 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:05,064 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:06,324 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:06,325 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:06,325 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:06,325 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:06,336 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:06,340 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:06,341 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:11,379 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:11,601 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:12,771 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:12,771 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:12,771 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:12,771 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:12,789 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:12,795 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:12,796 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:14,012 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:14,200 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:15,595 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:15,595 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:15,596 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:15,596 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:15,605 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:15,610 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:15,610 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:25,202 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:25,407 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:26,624 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:26,625 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:26,625 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:26,625 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:26,635 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:26,639 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:26,640 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:32,488 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:32,693 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:33,844 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:33,844 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:33,844 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:33,844 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:33,854 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:33,858 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:33,859 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:36,206 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:36,446 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:37,657 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:37,657 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:37,657 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:37,657 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:37,667 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:37,672 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:37,672 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:39,294 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:39,515 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:41,059 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:41,063 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:41,063 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:41,063 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:41,098 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:41,108 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:41,110 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:42,081 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:42,328 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:43,587 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:43,588 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:43,588 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:43,588 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:43,599 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:43,607 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:43,607 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:46,781 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:47,014 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:48,151 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:48,152 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:48,152 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:48,152 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:48,162 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:48,166 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:48,166 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 14:53:50,527 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 14:53:50,785 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 14:53:51,951 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 14:53:51,951 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 14:53:51,951 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 14:53:51,951 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 14:53:51,968 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 14:53:51,974 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 14:53:51,974 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:01:47,522 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:01:47,768 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:01:49,038 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:01:49,038 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:01:49,038 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:01:49,038 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:01:49,048 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:01:49,053 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:01:49,054 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:02:15,784 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:02:16,022 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:02:17,752 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:02:17,752 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:02:17,752 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:02:17,752 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:02:17,762 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:02:17,766 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:02:17,767 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:02:27,051 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:02:27,334 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:02:28,887 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:02:28,887 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:02:28,888 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:02:28,888 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:02:28,898 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:02:28,904 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:02:28,904 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:02:31,761 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:02:31,992 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:02:33,187 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:02:33,187 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:02:33,187 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:02:33,187 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:02:33,197 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:02:33,202 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:02:33,202 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:05:58,797 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:05:59,029 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:06:00,235 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:06:00,235 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:06:00,235 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:06:00,235 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:06:00,245 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:06:00,250 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:06:00,250 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:07:50,022 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:07:50,209 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:07:51,357 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:07:51,357 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:07:51,357 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:07:51,357 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:07:51,368 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:07:51,374 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:07:51,374 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:07:52,898 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:07:53,126 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:07:54,306 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:07:54,306 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:07:54,307 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:07:54,307 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:07:54,318 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:07:54,324 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:07:54,324 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:07:55,886 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:07:56,072 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:07:57,292 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:07:57,292 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:07:57,293 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:07:57,293 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:07:57,303 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:07:57,307 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:07:57,308 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:08:02,723 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:08:02,910 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:08:04,122 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:08:04,123 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:08:04,123 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:08:04,123 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:08:04,133 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:08:04,137 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:08:04,137 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:08:58,194 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:08:58,380 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:08:59,591 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:08:59,591 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:08:59,591 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:08:59,591 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:08:59,602 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:08:59,608 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:08:59,609 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:10:32,663 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:10:32,885 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:10:34,152 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:10:34,152 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:10:34,153 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:10:34,153 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:10:34,166 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:10:34,173 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:10:34,174 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:10:44,151 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:10:44,351 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:10:45,637 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:10:45,638 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:10:45,638 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:10:45,638 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:10:45,648 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:10:45,652 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:10:45,653 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:10:49,667 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:10:49,875 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:10:51,715 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:10:51,715 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:10:51,715 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:10:51,715 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:10:51,725 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:10:51,729 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:10:51,730 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:12:16,984 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:12:17,188 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:12:18,359 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:12:18,360 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:12:18,360 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:12:18,360 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:12:18,387 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:12:18,402 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:12:18,402 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:12:22,877 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:12:23,070 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:12:24,406 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:12:24,406 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:12:24,406 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:12:24,407 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:12:24,416 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:12:24,421 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:12:24,421 - werkzeug - INFO -  * Debugger PIN: 823-576-407
+2025-12-16 15:14:28,790 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/mesures_capteurs.py', reloading
+2025-12-16 15:14:29,041 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 15:14:30,429 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 15:14:30,429 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 15:14:30,429 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 15:14:30,429 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 15:14:30,439 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 15:14:30,444 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 15:14:30,444 - werkzeug - INFO -  * Debugger PIN: 823-576-407
