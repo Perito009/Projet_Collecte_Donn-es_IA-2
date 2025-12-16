@@ -91,3 +91,35 @@
 2025-12-15 13:51:50,556 - werkzeug - INFO -  * Debugger PIN: 515-962-584
 2025-12-15 13:53:19,058 - __main__ - INFO - Requête API: {"timestamp": "2025-12-15T13:53:19.057971", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
 2025-12-15 13:53:19,060 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 13:53:19] "GET /api/health HTTP/1.1" 200 -
+2025-12-16 10:38:35,649 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 10:38:35,649 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 10:38:35,649 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 10:38:35,649 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 10:38:35,660 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 10:38:35,671 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.239:5000
+2025-12-16 10:38:35,671 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 10:38:35,675 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 10:38:36,813 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 10:38:36,813 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 10:38:36,813 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 10:38:36,813 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 10:38:36,823 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 10:38:36,827 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 10:38:36,844 - werkzeug - INFO -  * Debugger PIN: 511-479-649
+2025-12-16 10:39:33,313 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 10:39:33] "[31m[1mPOST /api/predict HTTP/1.1[0m" 401 -
+2025-12-16 10:54:03,081 - werkzeug - INFO -  * Detected change in '/workspaces/Projet_Collecte_Donn-es_IA-2/app/historiques.py', reloading
+2025-12-16 10:54:03,323 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-16 10:54:04,644 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-16 10:54:04,644 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-16 10:54:04,644 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-16 10:54:04,644 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-16 10:54:04,656 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-16 10:54:04,661 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 10:54:04,661 - werkzeug - INFO -  * Debugger PIN: 511-479-649
+2025-12-16 10:54:10,349 - __main__ - INFO - Requête API: {"timestamp": "2025-12-16T10:54:10.348825", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"wind_speed": 10.5, "vibration_level": 3.2, "temperature": 25.0, "power_output": 750.0, "maintenance_done": 0}}
+2025-12-16 10:54:10,350 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-16 10:54:10,368 - __main__ - INFO - Prédiction réussie: ID=pred_20251216_105410_8288, Risque=Faible, Probabilité=0.000
+2025-12-16 10:54:10,369 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 10:54:10] "POST /api/predict HTTP/1.1" 200 -

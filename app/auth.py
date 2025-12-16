@@ -16,7 +16,7 @@ def login_form():
             if username in USERS and password == USERS[username]["password"]:
                 st.session_state.role = USERS[username]["role"]
                 st.success(f"Connecté en tant que {st.session_state.role}")
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Identifiant ou mot de passe incorrect")
         st.stop()
@@ -27,7 +27,8 @@ def logout_button():
         if st.button("🔓 Déconnexion"):
             del st.session_state["role"]
             st.success("Déconnecté avec succès")
-            st.experimental_rerun()
+            st.rerun()
+
 
 def require_role(roles):
     """Vérifie que l'utilisateur a le bon rôle"""

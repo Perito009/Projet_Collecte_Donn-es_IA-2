@@ -16,7 +16,7 @@ logs_data = [
 df_logs = pd.DataFrame(logs_data)
 
 if st.session_state.role == "technicien":
-    df_logs = df_logs[df_logs["niveau"].isin(["alerte", "critique"]))
+    df_logs = df_logs[df_logs["niveau"].isin(["alerte", "critique"])]
 
 st.dataframe(df_logs, use_container_width=True)
 
