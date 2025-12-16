@@ -10,7 +10,22 @@ require_role(["manager"])
 st.header("📊 Historique des incidents & pannes")
 st.caption("Suivi intelligent des risques de panne")
 
-API_URL = "http://localhost:5000/api/predict"
+API_URL_PREDICT = "http://localhost:5000/api/predict"
+API_URL_MODEL_INFO = "http://localhost:5000/api/model-info"
+API_URL_STATS = "http://localhost:5000/api/stats"
+
+# Configuration des tokens d'authentification
+API_TOKENS = {
+    'technician_token': 'tech_2024_energitech',
+    'manager_token': 'manager_2024_energitech',
+    'data_scientist_token': 'ds_2024_energitech'
+}
+
+# Fonction pour obtenir les headers d'authentification
+def get_auth_headers(token_key):
+    return {
+        "Authorization": f"Bearer {API_TOKENS.get(token_key, '')}"
+    }
 
 # Formulaire prédiction
 st.subheader("Nouvelle analyse de risque")
@@ -24,7 +39,6 @@ with st.form("prediction_form"):
     submit = st.form_submit_button("🔍 Analyser le risque")
 
 if submit:
-    # Préparez les données selon le format attendu par l'API
     payload = {
         "wind_speed": wind_speed,
         "vibration_level": vibration,
@@ -33,19 +47,13 @@ if submit:
         "maintenance_done": maintenance_done
     }
 
-    # En-têtes avec le token d'authentification
-    headers = {
-        "Authorization": "Bearer tech_2024_energitech"  # Remplacez par un token valide
-    }
-
     try:
-        response = requests.post(API_URL, json=payload, headers=headers)
+        response = requests.post(API_URL_PREDICT, json=payload, headers=get_auth_headers('manager_token'))
 
         if response.status_code == 200:
             result = response.json()
             st.success("Analyse terminée avec succès")
 
-            # Stockez l'historique
             if "history" not in st.session_state:
                 st.session_state.history = []
 
@@ -114,3 +122,46 @@ if "history" in st.session_state and st.session_state.history:
     st.dataframe(df, use_container_width=True)
 else:
     st.info("Aucune analyse enregistrée pour le moment")
+
+# Informations sur le modèle
+st.divider()
+st.subheader("📚 Informations sur le modèle")
+try:
+    response = requests.get(API_URL_MODEL_INFO, headers=get_auth_headers('manager_token'))
+    if response.status_code == 200:
+        model_info = response.json()
+        st.markdown(f"""
+        **Modèle :** {model_info['model_name']}
+        **Version :** {model_info['version']}
+        **Description :** {model_info['description']}
+        **Date d'entraînement :** {model_info['training_date']}
+
+        **Performance :**
+        - Accuracy : {model_info['performance_metrics']['accuracy']}
+        - Précision : {model_info['performance_metrics']['precision']}
+        - Recall : {model_info['performance_metrics']['recall']}
+        - F1 Score : {model_info['performance_metrics']['f1_score']}
+
+        **Caractéristiques :**
+        - {', '.join(model_info['input_features'])}
+        """)
+    else:
+        st.error(f"Erreur lors de la récupération des informations du modèle : {response.status_code}")
+except Exception as e:
+    st.error(f"Impossible de contacter l'API pour obtenir les informations du modèle : {e}")
+
+# Statistiques
+st.divider()
+st.subheader("📊 Statistiques d'utilisation")
+try:
+    response = requests.get(API_URL_STATS, headers=get_auth_headers('manager_token'))
+    if response.status_code == 200:
+        stats = response.json()
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Temps de disponibilité", stats['uptime'])
+        col2.metric("Requêtes aujourd'hui", stats['model_requests_today'])
+        col3.metric("Taux de succès", f"{stats['success_rate'] * 100:.1f}%")
+    else:
+        st.error(f"Erreur lors de la récupération des statistiques : {response.status_code}")
+except Exception as e:
+    st.error(f"Impossible de contacter l'API pour obtenir les statistiques : {e}")
