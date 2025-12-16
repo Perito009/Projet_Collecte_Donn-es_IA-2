@@ -8,11 +8,11 @@ from auth import require_role
 require_role(["manager"])
 
 st.header("📊 Historique des incidents & pannes")
-st.caption("DataMécanique — suivi intelligent des risques de panne")
+st.caption("Suivi intelligent des risques de panne")
 
 API_URL = "http://localhost:5000/api/predict"
 
-# --- Formulaire prédiction ---
+# Formulaire prédiction
 st.subheader("Nouvelle analyse de risque")
 with st.form("prediction_form"):
     col1, col2, col3 = st.columns(3)
@@ -44,7 +44,7 @@ if submit:
     except Exception as e:
         st.error(f"Impossible de contacter l'API : {e}")
 
-# --- Dashboard premium ---
+# Dashboard premium
 st.divider()
 st.subheader("📈 Suivi du risque de panne")
 if "history" in st.session_state and st.session_state.history:
@@ -56,7 +56,6 @@ if "history" in st.session_state and st.session_state.history:
     col3.metric("Analyses effectuées", len(df))
     df_reset = df.reset_index()
 
-    # Graphiques Altair
     prob_chart = alt.Chart(df_reset).mark_line(color="red", point=True).encode(
         x='date:T', y='probability:Q', tooltip=['date:T','probability:Q','risk_level:N']
     ).properties(height=350, title="Probabilité de panne")

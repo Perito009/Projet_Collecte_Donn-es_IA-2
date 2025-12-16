@@ -1,13 +1,12 @@
 import streamlit as st
 
-# --- Dictionnaire utilisateurs / rôles ---
 USERS = {
     "technicien": {"password": "tech123", "role": "technicien"},
     "manager": {"password": "manager123", "role": "manager"}
 }
 
 def login_form():
-    """Affiche le formulaire login si pas connecté"""
+    """Affiche le formulaire login si non connecté"""
     if "role" not in st.session_state:
         with st.form("login_form"):
             username = st.text_input("Nom d'utilisateur")
