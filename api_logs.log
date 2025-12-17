@@ -571,3 +571,75 @@
 2025-12-16 15:30:16,121 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 15:30:16] "GET /api/model-info HTTP/1.1" 200 -
 2025-12-16 15:30:16,125 - __main__ - INFO - Requête API: {"timestamp": "2025-12-16T15:30:16.125332", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2025-12-16 15:30:16,126 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 15:30:16] "GET /api/stats HTTP/1.1" 200 -
+python: can't open file '/workspaces/Projet_Collecte_Donn-es_IA-2/app.py': [Errno 2] No such file or directory
+2025-12-17 16:04:22,351 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-17 16:04:22,351 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-17 16:04:22,352 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-17 16:04:22,352 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-17 16:04:22,352 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-17 16:04:22,352 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-17 16:04:22,352 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-17 16:04:22,352 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-17 16:04:22,366 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-17 16:04:22,366 - __main__ - INFO - Test de prédiction réussi: 0
+⚙️  Chargement du modèle de classification EnergiTech...
+✅ Modèle chargé avec succès!
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=0.63
+📈 Performance: Recall=0.83
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+📝 Exemple de requête POST /api/predict:
+  {
+    "wind_speed": 12.5,
+    "vibration_level": 4.2,
+    "temperature": 28.3,
+    "power_output": 850,
+    "maintenance_done": 0
+  }
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: on
+2025-12-17 16:04:22,378 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.25:5000
+2025-12-17 16:04:22,378 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.25:5000
+2025-12-17 16:04:22,379 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-17 16:04:22,379 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-17 16:04:22,385 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-17 16:04:22,385 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-12-17 16:04:24,294 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-17 16:04:24,294 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-17 16:04:24,297 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-17 16:04:24,297 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-17 16:04:24,298 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-17 16:04:24,298 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-17 16:04:24,298 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-17 16:04:24,298 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-17 16:04:24,327 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-17 16:04:24,327 - __main__ - INFO - Test de prédiction réussi: 0
+2025-12-17 16:04:24,335 - werkzeug - WARNING -  * Debugger is active!
+2025-12-17 16:04:24,335 - werkzeug - WARNING -  * Debugger is active!
+2025-12-17 16:04:24,336 - werkzeug - INFO -  * Debugger PIN: 175-800-365
+2025-12-17 16:04:24,336 - werkzeug - INFO -  * Debugger PIN: 175-800-365
