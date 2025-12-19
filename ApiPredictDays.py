@@ -405,11 +405,11 @@ def internal_error(error):
 
 if __name__ == '__main__':
     # Charger le modèle au démarrage
-    print("⚙️  Chargement du modèle de classification EnergiTech...")
+    print("Chargement du modèle de classification EnergiTech...")
     if load_model():
-        print("✅ Modèle chargé avec succès!")
+        print("Modèle chargé avec succès!")
     else:
-        print("⚠️  Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.")
+        print("Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.")
 
     # Afficher les informations de démarrage
     print("\n" + "="*60)
@@ -429,16 +429,7 @@ if __name__ == '__main__':
     print("   POST /api/batch-predict - Prédiction par lot (authentifié)")
     print("   GET  /api/stats        - Statistiques (authentifié)")
 
-    print("\n📝 Exemple de requête POST /api/predict:")
-    print('''  {
-    "wind_speed": 12.5,
-    "vibration_level": 4.2,
-    "temperature": 28.3,
-    "power_output": 850,
-    "maintenance_done": 0
-  }''')
-
     print(f"\n👤 Headers requis: Authorization: Bearer <token>")
 
     # Démarrer le serveur
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)

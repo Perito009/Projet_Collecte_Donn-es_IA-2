@@ -1047,3 +1047,196 @@ Port 5000 is in use by another program. Either identify and stop that program, o
 2025-12-19 10:58:08,979 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T10:58:08.979457", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2025-12-19 10:58:08,980 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 10:58:08] "GET /api/stats HTTP/1.1" 200 -
 2025-12-19 10:58:08,980 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 10:58:08] "GET /api/stats HTTP/1.1" 200 -
+2025-12-19 11:32:46,876 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-19 11:32:46,876 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-19 11:32:46,876 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-19 11:32:46,876 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-19 11:32:46,877 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-19 11:32:46,877 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-19 11:32:46,877 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-19 11:32:46,877 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2025-12-19 11:43:02,519 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 11:43:02,519 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2025-12-19 12:05:49,999 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:05:49,999 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:05:50,003 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.0.0.145:5050
+2025-12-19 12:05:50,003 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:14:29,621 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:14:29,621 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:14:29,624 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.0.0.145:5050
+2025-12-19 12:14:29,624 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:15:00,781 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:15:00,782 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:15:00,784 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.0.0.145:5050
+2025-12-19 12:15:00,784 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:15:07,640 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:15:07] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 12:15:07,927 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:15:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-19 12:15:40,628 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:15:40,628 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:15:40,632 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.0.0.145:5050
+2025-12-19 12:15:40,632 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:15:46,799 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:15:46] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 12:17:04,902 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:17:04,902 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:17:04,905 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.0.0.145:5050
+2025-12-19 12:17:04,905 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:17:12,525 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:17:12] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 12:17:22,411 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:17:22] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 12:19:32,615 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:19:32,616 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:19:32,618 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.0.0.145:5050
+2025-12-19 12:19:32,618 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:22:14,174 - __main__ - INFO - Modèle chargé avec succès
+2025-12-19 12:22:14,174 - __main__ - INFO - Features: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+Chargement du modèle EnergiTech...
+✅ Modèle chargé
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5050 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2025-12-19 12:27:52,803 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-19 12:27:52,803 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-19 12:27:52,803 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-19 12:27:52,803 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-19 12:27:52,804 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-19 12:27:52,804 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-19 12:27:52,804 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-19 12:27:52,804 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-19 12:27:52,806 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.145:5000
+2025-12-19 12:27:52,806 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.145:5000
+2025-12-19 12:27:52,806 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:27:52,806 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:28:03,478 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:03] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 12:28:03,478 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:03] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 12:28:52,845 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:52.845779", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:52,845 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:52.845779", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:52,846 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:52] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-19 12:28:52,846 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:52] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-19 12:28:52,850 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:52.850610", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:52,850 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:52.850610", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:52,851 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:52] "GET /api/stats HTTP/1.1" 200 -
+2025-12-19 12:28:52,851 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:52] "GET /api/stats HTTP/1.1" 200 -
+2025-12-19 12:28:59,207 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.207306", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"wind_speed": 10.5, "vibration_level": 3.2, "temperature": 25.0, "power_output": 750.0, "maintenance_done": 0}}
+2025-12-19 12:28:59,207 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.207306", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"wind_speed": 10.5, "vibration_level": 3.2, "temperature": 25.0, "power_output": 750.0, "maintenance_done": 0}}
+2025-12-19 12:28:59,208 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-19 12:28:59,208 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-19 12:28:59,226 - __main__ - INFO - Prédiction réussie: ID=pred_20251219_122859_4080, Risque=Faible, Probabilité=0.000
+2025-12-19 12:28:59,226 - __main__ - INFO - Prédiction réussie: ID=pred_20251219_122859_4080, Risque=Faible, Probabilité=0.000
+2025-12-19 12:28:59,227 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "POST /api/predict HTTP/1.1" 200 -
+2025-12-19 12:28:59,227 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "POST /api/predict HTTP/1.1" 200 -
+2025-12-19 12:28:59,336 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.336331", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:59,336 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.336331", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:59,337 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-19 12:28:59,337 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-19 12:28:59,342 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.342901", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:59,342 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.342901", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-19 12:28:59,343 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "GET /api/stats HTTP/1.1" 200 -
+2025-12-19 12:28:59,343 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "GET /api/stats HTTP/1.1" 200 -

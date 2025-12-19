@@ -26,3 +26,16 @@ if st.session_state.role == "manager":
     col1.metric("Total événements", len(df_logs))
     col2.metric("Alertes", len(df_logs[df_logs["niveau"]=="alerte"]))
     col3.metric("Critiques", len(df_logs[df_logs["niveau"]=="critique"]))
+
+import streamlit as st
+
+# Lire le fichier et permettre son téléchargement
+with open("api_logs.log", "rb") as file:  # Notez le mode "rb" pour lire en binaire
+    st.download_button(
+        label="Télécharger le fichier de log API",
+        data=file,
+        file_name="api_logs.log",
+        mime="text/plain"
+    )
+  
+
