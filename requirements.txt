@@ -6,4 +6,5 @@ numpy
 joblib
 scikit-learn
 streamlit
-pytest 
+pytest
+matplotlib
