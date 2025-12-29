@@ -1,9 +1,10 @@
-#!/bin/bash
+set -e
 
+echo "Starting application..."
 
-# Démarrer l'API en arrière-plan et rediriger les logs
+# Lancer l'API en arrière-plan
 python ApiPredictDays.py >> /workspaces/Projet_Collecte_Donn-es_IA-2/api_logs.log 2>&1 &
 
-# Démarrer l'application Streamlit en arrière-plan
-streamlit run app/main.py &
-
+echo "API started in the background."
+# Lancer Streamlit (process principal)
+streamlit run app/main.py
