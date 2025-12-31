@@ -4,7 +4,6 @@ Modèle de classification : prédiction de panne dans les 7 prochains jours
 """
 
 import pandas as pd
-import numpy as np
 import joblib
 import json
 import logging

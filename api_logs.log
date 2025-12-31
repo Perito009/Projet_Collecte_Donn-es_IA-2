@@ -1240,3 +1240,71 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
 2025-12-19 12:28:59,342 - __main__ - INFO - Requête API: {"timestamp": "2025-12-19T12:28:59.342901", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2025-12-19 12:28:59,343 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "GET /api/stats HTTP/1.1" 200 -
 2025-12-19 12:28:59,343 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:28:59] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:15:52,570 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-31 13:15:52,570 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-31 13:15:52,604 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-31 13:15:52,604 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-31 13:15:52,604 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-31 13:15:52,604 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-31 13:15:52,604 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-31 13:15:52,604 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2025-12-31 13:15:52,607 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.1:5000
+2025-12-31 13:15:52,607 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.1:5000
+2025-12-31 13:15:52,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-31 13:15:52,607 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-31 13:17:06,840 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:06.840237", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:06,840 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:06.840237", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:06,841 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:06] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:17:06,841 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:06] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:17:06,844 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:06.844593", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:06,844 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:06.844593", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:06,845 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:06] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:17:06,845 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:06] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:17:13,373 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.373594", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"wind_speed": 10.5, "vibration_level": 3.2, "temperature": 25.0, "power_output": 750.0, "maintenance_done": 0}}
+2025-12-31 13:17:13,373 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.373594", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"wind_speed": 10.5, "vibration_level": 3.2, "temperature": 25.0, "power_output": 750.0, "maintenance_done": 0}}
+2025-12-31 13:17:13,374 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:17:13,374 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:17:13,393 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_131713_6574, Risque=Faible, Probabilité=0.000
+2025-12-31 13:17:13,393 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_131713_6574, Risque=Faible, Probabilité=0.000
+2025-12-31 13:17:13,394 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:17:13,394 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:17:13,496 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.496737", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:13,496 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.496737", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:13,497 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:17:13,497 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:17:13,503 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.503542", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:13,503 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.503542", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:17:13,505 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:17:13,505 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "GET /api/stats HTTP/1.1" 200 -

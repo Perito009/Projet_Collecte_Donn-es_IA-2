@@ -8,3 +8,4 @@ scikit-learn
 streamlit
 pytest
 matplotlib
+altair
