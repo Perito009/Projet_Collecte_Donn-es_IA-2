@@ -1592,3 +1592,245 @@ Port 5000 is in use by another program. Either identify and stop that program, o
 2025-12-31 14:44:08,741 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.741710", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2025-12-31 14:44:08,742 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "GET /api/stats HTTP/1.1" 200 -
 2025-12-31 14:44:08,742 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "GET /api/stats HTTP/1.1" 200 -
+2026-01-05 13:37:03,790 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:37:03,793 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:37:03,793 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:37:03,793 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:37:03,839 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:37:03,839 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:37:03,839 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:37:03,839 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:37:03,847 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:03.847313", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 13:37:03,851 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:03.851343", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:37:04,016 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.016840", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:37:04,017 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 13:37:04,023 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_133704_9570, Risque=Élevé, Probabilité=0.900
+2026-01-05 13:37:04,026 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.026202", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:37:04,032 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.032486", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:37:04,032 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 13:37:04,034 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.034888", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 13:37:04,035 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 13:37:04,036 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.036744", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 13:37:04,039 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.039728", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 13:37:04,042 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:37:04.042878", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:37:04,135 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:37:04,135 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:37:04,136 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:37:04,136 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:47:00,303 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:00.302928", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:07,964 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:47:07,964 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:47:07,964 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:47:07,964 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:47:07,999 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:47:08,000 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:47:08,000 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:47:08,000 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:47:08,007 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.007279", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 13:47:08,010 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.010497", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:08,012 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.011950", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:47:08,012 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 13:47:08,012 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_134708_8068, Risque=Élevé, Probabilité=0.900
+2026-01-05 13:47:08,014 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.014467", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:08,089 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.089681", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:47:08,090 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 13:47:08,091 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.091568", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 13:47:08,091 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 13:47:08,093 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.093223", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 13:47:08,096 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.096522", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 13:47:08,100 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:08.100151", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:08,139 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:47:08,139 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:47:08,139 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:47:08,139 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:47:26,493 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:47:26,493 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:47:26,493 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:47:26,493 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:47:26,530 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:47:26,530 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:47:26,530 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:47:26,530 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:47:26,535 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.535456", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 13:47:26,538 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.538866", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:26,540 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.540431", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:47:26,541 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 13:47:26,541 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_134726_7543, Risque=Élevé, Probabilité=0.900
+2026-01-05 13:47:26,543 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.543348", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:26,545 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.545367", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:47:26,545 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 13:47:26,547 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.547048", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 13:47:26,547 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 13:47:26,548 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.548702", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 13:47:26,551 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.551457", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 13:47:26,554 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:47:26.554878", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:47:26,604 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:47:26,605 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:47:26,605 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:47:26,605 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:48:57,435 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:48:57,435 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:48:57,435 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:48:57,435 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:48:57,469 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:48:57,469 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:48:57,469 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:48:57,469 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:48:57,474 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.474826", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 13:48:57,478 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.478025", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:48:57,479 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.479559", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:48:57,480 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 13:48:57,480 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_134857_4210, Risque=Élevé, Probabilité=0.900
+2026-01-05 13:48:57,482 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.482075", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:48:57,484 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.483948", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:48:57,484 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 13:48:57,486 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.485964", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 13:48:57,486 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 13:48:57,487 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.487652", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 13:48:57,490 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.490697", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 13:48:57,494 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:48:57.494020", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:48:57,531 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:48:57,531 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:48:57,531 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:48:57,531 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:49:02,617 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:49:02,617 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:49:02,617 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:49:02,617 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:49:02,652 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:49:02,653 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:49:02,653 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:49:02,653 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 13:49:02,658 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.658827", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 13:49:02,663 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.663205", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:49:02,665 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.665610", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:49:02,666 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 13:49:02,666 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_134902_9752, Risque=Élevé, Probabilité=0.900
+2026-01-05 13:49:02,668 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.668416", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:49:02,670 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.670230", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 13:49:02,670 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 13:49:02,672 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.672478", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 13:49:02,672 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 13:49:02,674 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.674538", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 13:49:02,677 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.677517", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 13:49:02,681 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:49:02.681240", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 13:49:02,721 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 13:49:02,721 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 13:49:02,721 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 13:49:02,721 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 14:23:01,828 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:23:01,828 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:23:01,828 - ApiPredictDays - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 14:23:01,829 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 14:23:01,836 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.836321", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 14:23:01,839 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.839723", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:23:01,841 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.841313", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:23:01,841 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 14:23:01,842 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_142301_7263, Risque=Élevé, Probabilité=0.900
+2026-01-05 14:23:01,844 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.844104", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:23:01,846 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.846135", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:23:01,846 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 14:23:01,848 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.847951", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 14:23:01,848 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 14:23:01,849 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.849670", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 14:23:01,852 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.852601", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 14:23:01,856 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:01.856001", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:23:01,857 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:23:01,857 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:23:01,857 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-05 14:23:01,857 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 14:23:22,238 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.238623", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 14:23:22,242 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.242038", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:23:22,243 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.243570", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:23:22,244 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 14:23:22,244 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_142322_3574, Risque=Élevé, Probabilité=0.900
+2026-01-05 14:23:22,246 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.246286", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:23:22,248 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.248490", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:23:22,248 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 14:23:22,250 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.250130", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 14:23:22,250 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 14:23:22,251 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.251776", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 14:23:22,254 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.254742", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 14:23:22,257 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:23:22.257675", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:23:22,259 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:23:22,259 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:23:22,259 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-05 14:23:22,259 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 14:32:11,570 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.570335", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 14:32:11,574 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.573971", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:32:11,575 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.575633", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:32:11,576 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 14:32:11,576 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_143211_1734, Risque=Élevé, Probabilité=0.900
+2026-01-05 14:32:11,578 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.578403", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:32:11,580 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.580351", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:32:11,580 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 14:32:11,582 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.582256", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 14:32:11,582 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 14:32:11,584 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.583957", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 14:32:11,586 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.586800", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 14:32:11,589 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:32:11.589354", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:32:11,594 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:32:11,594 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:32:11,594 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-05 14:32:11,594 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-05 14:35:06,863 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:35:06,863 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:35:06,863 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:35:06,863 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:35:06,863 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 14:35:06,863 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-05 14:35:06,864 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-05 14:35:06,864 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-05 14:35:06,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.79:5000
+2026-01-05 14:35:06,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.79:5000
+2026-01-05 14:35:06,866 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-05 14:35:06,866 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-05 14:36:34,355 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.355725", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-05 14:36:34,366 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.365921", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:36:34,369 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.369063", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:36:34,370 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-05 14:36:34,373 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260105_143634_5734, Risque=Élevé, Probabilité=0.900
+2026-01-05 14:36:34,375 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.375757", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:36:34,378 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.378725", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-05 14:36:34,379 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-05 14:36:34,382 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.382153", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-05 14:36:34,384 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-05 14:36:34,388 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.387896", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-05 14:36:34,391 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.391666", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-05 14:36:34,399 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T14:36:34.398973", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-05 14:36:34,411 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-05 14:36:34,413 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2026-01-05 14:36:34,415 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-05 14:36:34,415 - ApiPredictDays - INFO - Nombre de features attendues: 5

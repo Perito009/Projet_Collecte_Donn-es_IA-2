@@ -37,5 +37,25 @@ with open("api_logs.log", "rb") as file:  # Notez le mode "rb" pour lire en bina
         file_name="api_logs.log",
         mime="text/plain"
     )
+
+st.markdown("---")
+st.subheader("📄 Documentation API")
+# Permettre le téléchargement de swagger.yaml et afficher un avertissement si absent
+try:
+    with open("swagger.yaml", "rb") as sw_file:
+        st.download_button(
+            label="Télécharger la documentation OpenAPI (swagger.yaml)",
+            data=sw_file,
+            file_name="swagger.yaml",
+            mime="text/yaml"
+        )
+    # Optionnel : afficher un aperçu du YAML lisible
+    try:
+        with open("swagger.yaml", "r", encoding="utf-8") as sw_text:
+            st.code(sw_text.read(), language="yaml")
+    except Exception:
+        pass
+except FileNotFoundError:
+    st.warning("Fichier `swagger.yaml` introuvable dans le répertoire racine.")
   
 

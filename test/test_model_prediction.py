@@ -1,7 +1,31 @@
 import ApiPredictDays as mi
 import pandas as pd
 
-mi.load_model()
+
+class DummyPredictModel:
+    def __init__(self):
+        self.feature_names_in_ = ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+
+    def predict_proba(self, X):
+        ws = X.iloc[0]['wind_speed']
+        if ws > 12:
+            return [[0.1, 0.9]]
+        return [[0.8, 0.2]]
+
+    def predict(self, X):
+        return [int(self.predict_proba(X)[0][1] >= 0.5)]
+
+
+def setup_function():
+    # Installer un modèle factice pour les tests
+    mi.model = DummyPredictModel()
+    mi.feature_columns = list(mi.model.feature_names_in_)
+
+
+def teardown_function():
+    mi.model = None
+    mi.feature_columns = None
+
 
 def test_prepare_features_shape_and_columns():
     data = {
@@ -35,15 +59,17 @@ def test_model_prediction_output():
     prediction_proba = mi.model.predict_proba(features_df)
 
     # Assertions
-    assert prediction.shape == (1,)
+    assert len(prediction) == 1
     assert prediction[0] in [0, 1]
 
-    assert prediction_proba.shape == (1, 2)
+    assert len(prediction_proba) == 1
     assert 0.0 <= prediction_proba[0][0] <= 1.0
     assert 0.0 <= prediction_proba[0][1] <= 1.0
 
     # Les probabilités doivent sommer à 1
     assert round(sum(prediction_proba[0]), 5) == 1.0
+
+
 def test_model_prediction_consistency():
     data = {
         "wind_speed": 8.5,

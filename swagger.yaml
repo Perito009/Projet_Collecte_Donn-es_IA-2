@@ -1,0 +1,286 @@
+swagger: "2.0"
+info:
+  title: API d'inférence pour la maintenance prédictive des éoliennes - EnergiTech
+  description: Modèle de classification pour la prédiction de panne dans les 7 prochains jours
+  version: 1.0.0
+host: localhost:5000
+basePath: /api
+schemes:
+  - http
+paths:
+  /health:
+    get:
+      summary: Vérifie l'état de santé de l'API
+      description: Retourne l'état de santé de l'API, y compris si le modèle est chargé, les métadonnées du modèle, la version de l'API, et les endpoints disponibles.
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                description: Statut de l'API (healthy ou degraded)
+              timestamp:
+                type: string
+                format: date-time
+                description: Date et heure de la réponse
+              model_loaded:
+                type: boolean
+                description: Indique si le modèle est chargé
+              model_metadata:
+                type: object
+                description: Métadonnées du modèle
+              api_version:
+                type: string
+                description: Version de l'API
+              endpoints_available:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    path:
+                      type: string
+                      description: Chemin de l'endpoint
+                    method:
+                      type: string
+                      description: Méthode HTTP
+                    description:
+                      type: string
+                      description: Description de l'endpoint
+  /model-info:
+    get:
+      summary: Retourne les informations sur le modèle
+      description: Retourne des informations détaillées sur le modèle, y compris les caractéristiques, les performances, et les limitations.
+      security:
+        - bearerAuth: []
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              model_name:
+                type: string
+                description: Nom du modèle
+              version:
+                type: string
+                description: Version du modèle
+              description:
+                type: string
+                description: Description du modèle
+              training_date:
+                type: string
+                format: date
+                description: Date d'entraînement du modèle
+              performance_metrics:
+                type: object
+                description: Métriques de performance du modèle
+              input_features:
+                type: array
+                items:
+                  type: string
+                  description: Liste des caractéristiques d'entrée
+              model_details:
+                type: object
+                description: Détails du modèle
+              output:
+                type: object
+                description: Description de la sortie du modèle
+              limitations:
+                type: array
+                items:
+                  type: string
+                  description: Limitations du modèle
+  /predict:
+    post:
+      summary: Prédiction de panne pour une éolienne
+      description: Fait une prédiction de panne pour une éolienne basée sur les données fournies.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              wind_speed:
+                type: number
+                description: Vitesse du vent (m/s)
+              vibration_level:
+                type: number
+                description: Niveau de vibration
+              temperature:
+                type: number
+                description: Température (°C)
+              power_output:
+                type: number
+                description: Puissance délivrée (kW)
+              maintenance_done:
+                type: integer
+                description: Intervention récente (0/1)
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              prediction:
+                type: object
+                description: Prédiction de panne
+              technical_details:
+                type: object
+                description: Détails techniques de la prédiction
+              recommendations:
+                type: array
+                items:
+                  type: string
+                  description: Recommandations basées sur la prédiction
+              input_data:
+                type: object
+                description: Données d'entrée pour la prédiction
+              timestamp:
+                type: string
+                format: date-time
+                description: Date et heure de la prédiction
+              prediction_id:
+                type: string
+                description: Identifiant de la prédiction
+        400:
+          description: Bad Request
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: Message d'erreur
+              timestamp:
+                type: string
+                format: date-time
+                description: Date et heure de l'erreur
+        503:
+          description: Service Unavailable
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: Message d'erreur
+              timestamp:
+                type: string
+                format: date-time
+                description: Date et heure de l'erreur
+  /batch-predict:
+    post:
+      summary: Prédiction de panne pour plusieurs éoliennes
+      description: Fait une prédiction de panne pour plusieurs éoliennes. Les données doivent inclure une liste de turbines, chaque turbine ayant les mêmes caractéristiques que pour une prédiction unique.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              turbines:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    turbine_id:
+                      type: string
+                      description: Identifiant de la turbine
+                    wind_speed:
+                      type: number
+                      description: Vitesse du vent (m/s)
+                    vibration_level:
+                      type: number
+                      description: Niveau de vibration
+                    temperature:
+                      type: number
+                      description: Température (°C)
+                    power_output:
+                      type: number
+                      description: Puissance délivrée (kW)
+                    maintenance_done:
+                      type: integer
+                      description: Intervention récente (0/1)
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              predictions:
+                type: array
+                items:
+                  type: object
+                  description: Prédictions pour chaque turbine
+              errors:
+                type: array
+                items:
+                  type: string
+                  description: Erreurs pour chaque turbine
+              summary:
+                type: object
+                description: Résumé des prédictions
+              timestamp:
+                type: string
+                format: date-time
+                description: Date et heure de la réponse
+        400:
+          description: Bad Request
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: Message d'erreur
+        503:
+          description: Service Unavailable
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: Message d'erreur
+  /stats:
+    get:
+      summary: Retourne des statistiques d'utilisation
+      description: Retourne des statistiques d'utilisation, comme le temps de disponibilité, le nombre de requêtes, etc.
+      security:
+        - bearerAuth: []
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              uptime:
+                type: string
+                description: Temps de disponibilité
+              model_requests_today:
+                type: integer
+                description: Nombre de requêtes aujourd'hui
+              average_response_time_ms:
+                type: integer
+                description: Temps de réponse moyen en millisecondes
+              success_rate:
+                type: number
+                description: Taux de réussite
+              last_prediction:
+                type: string
+                format: date-time
+                description: Date et heure de la dernière prédiction
+              active_since:
+                type: string
+                format: date-time
+                description: Date et heure de l'activation
+securityDefinitions:
+  bearerAuth:
+    type: apiKey
+    name: Authorization
+    in: header
+    description: Token d'authentification pour accéder aux endpoints sécurisés. Les tokens disponibles sont : technician_token, manager_token, data_scientist_token.

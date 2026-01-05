@@ -1,7 +1,13 @@
 import ApiPredictDays as mi
 
-# Charger le modèle une fois pour tous les tests
-mi.load_model()
+
+def setup_module():
+    """Définir les colonnes de features attendues pour les tests de validation."""
+    mi.feature_columns = ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+
+
+def teardown_module():
+    mi.feature_columns = None
 
 def test_validate_input_data_valid():
     valid_data = {
