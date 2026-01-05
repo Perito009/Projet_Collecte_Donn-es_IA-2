@@ -1,167 +1,224 @@
 import streamlit as st
 import requests
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import altair as alt
 from auth import require_role
 
+# =============================
+# CONTRÔLE D'ACCÈS
+# =============================
 require_role(["manager"])
 
-st.header("📊 Historique des incidents & pannes")
-st.caption("Suivi intelligent des risques de panne")
+# =============================
+# CONFIG PAGE
+# =============================
+st.title("📊 Tableau de bord – Suivi intelligent des pannes")
+st.caption("Analyse visuelle du risque et aide à la décision")
 
+# =============================
+# CONFIG API
+# =============================
 API_URL_PREDICT = "http://localhost:5000/api/predict"
 API_URL_MODEL_INFO = "http://localhost:5000/api/model-info"
 API_URL_STATS = "http://localhost:5000/api/stats"
 
-# Configuration des tokens d'authentification
 API_TOKENS = {
-    'technician_token': 'tech_2024_energitech',
-    'manager_token': 'manager_2024_energitech',
-    'data_scientist_token': 'ds_2024_energitech'
+    "manager_token": "manager_2024_energitech"
 }
 
-# Fonction pour obtenir les headers d'authentification
-def get_auth_headers(token_key):
+def get_auth_headers(token_key="manager_token"):
     return {
-        "Authorization": f"Bearer {API_TOKENS.get(token_key, '')}"
+        "Authorization": f"Bearer {API_TOKENS[token_key]}"
     }
 
-# Formulaire prédiction
-st.subheader("Nouvelle analyse de risque")
+# =============================
+# FORMULAIRE D'ANALYSE
+# =============================
+st.subheader("🔍 Nouvelle analyse de risque")
+
 with st.form("prediction_form"):
     col1, col2, col3 = st.columns(3)
-    temperature = col1.number_input("🌡️ Température", value=25.0)
-    vibration = col2.number_input("📳 Vibration", value=3.2)
-    wind_speed = col3.number_input("💨 Vitesse du vent", value=10.5)
-    power_output = col1.number_input("⚡ Puissance délivrée (kW)", value=750.0)
-    maintenance_done = col2.selectbox("🔧 Maintenance récente", options=[0, 1], format_func=lambda x: "Oui" if x == 1 else "Non")
+
+    temperature = col1.number_input("🌡️ Température (°C)", value=25.0)
+    vibration = col2.number_input("📳 Vibration", value=3.0)
+    wind_speed = col3.number_input("💨 Vitesse du vent (m/s)", value=10.0)
+    power_output = col1.number_input("⚡ Puissance délivrée (kW)", value=700.0)
+    maintenance_done = col2.selectbox(
+        "🔧 Maintenance récente",
+        options=[0, 1],
+        format_func=lambda x: "Oui" if x == 1 else "Non"
+    )
+
     submit = st.form_submit_button("🔍 Analyser le risque")
 
 if submit:
     payload = {
-        "wind_speed": wind_speed,
-        "vibration_level": vibration,
         "temperature": temperature,
+        "vibration_level": vibration,
+        "wind_speed": wind_speed,
         "power_output": power_output,
         "maintenance_done": maintenance_done
     }
 
     try:
-        response = requests.post(API_URL_PREDICT, json=payload, headers=get_auth_headers('manager_token'))
+        response = requests.post(
+            API_URL_PREDICT,
+            json=payload,
+            headers=get_auth_headers()
+        )
 
         if response.status_code == 200:
             result = response.json()
-            st.success("Analyse terminée avec succès")
 
             if "history" not in st.session_state:
                 st.session_state.history = []
 
             st.session_state.history.append({
                 "date": datetime.now(),
-                "temperature": temperature,
-                "vibration": vibration,
-                "wind_speed": wind_speed,
-                "power_output": power_output,
-                "maintenance_done": maintenance_done,
+                "temperature": float(temperature),
+                "vibration": float(vibration),
+                "wind_speed": float(wind_speed),
+                "power_output": float(power_output),
+                "maintenance_done": int(maintenance_done),
                 "risk_level": result["prediction"]["risk_level"],
-                "probability": result["prediction"]["probability_of_failure"]
+                "probability": float(result["prediction"]["probability_of_failure"])
             })
+
+            st.success("Analyse enregistrée avec succès")
         else:
             st.error(f"Erreur API : {response.status_code}")
-            st.json(response.json())
     except Exception as e:
         st.error(f"Impossible de contacter l'API : {e}")
 
-# Dashboard premium
+# =============================
+# TABLEAU DE BORD – RISQUE
+# =============================
 st.divider()
-st.subheader("📈 Suivi du risque de panne")
+st.subheader("📈 Synthèse du risque")
+
 if "history" in st.session_state and st.session_state.history:
-    df = pd.DataFrame(st.session_state.history).sort_values("date").set_index("date")
-    last = df.iloc[-1]
+    df = pd.DataFrame(st.session_state.history)
+    df["date"] = pd.to_datetime(df["date"])
+    df = df.sort_values("date")
+
+    last_7_days = df[df["date"] >= datetime.now() - timedelta(days=7)].copy()
+
+    def risk_to_band(p):
+        if p > 0.7:
+            return "Risque élevé"
+        elif p > 0.4:
+            return "Risque moyen"
+        else:
+            return "Risque faible"
+
+    last_7_days["risk_band"] = last_7_days["probability"].apply(risk_to_band)
+
+    avg_prob = last_7_days["probability"].mean()
+    last_risk = df.iloc[-1]["risk_level"]
+
     col1, col2, col3 = st.columns(3)
-    col1.metric("Dernière probabilité", f"{last['probability']:.2%}")
-    col2.metric("Niveau de risque", last["risk_level"])
+    col1.metric("Risque moyen (7 jours)", f"{avg_prob:.1%}")
+    col2.metric("Dernier niveau de risque", last_risk)
     col3.metric("Analyses effectuées", len(df))
-    df_reset = df.reset_index()
 
-    prob_chart = alt.Chart(df_reset).mark_line(color="red", point=True).encode(
-        x='date:T', y='probability:Q', tooltip=['date:T','probability:Q','risk_level:N']
-    ).properties(height=350, title="Probabilité de panne")
+    st.subheader("📉 Évolution du risque (7 jours)")
 
-    temp_chart = alt.Chart(df_reset).mark_line(color="blue").encode(
-        x='date:T', y='temperature:Q', tooltip=['date:T','temperature:Q']
-    ).properties(height=200, title="Température")
+    risk_chart = (
+        alt.Chart(last_7_days)
+        .mark_line(point=True)
+        .encode(
+            x=alt.X("date:T", title="Date"),
+            y=alt.Y("probability:Q", title="Probabilité de panne", scale=alt.Scale(domain=[0, 1])),
+            color=alt.Color(
+                "risk_band:N",
+                scale=alt.Scale(
+                    domain=["Risque faible", "Risque moyen", "Risque élevé"],
+                    range=["green", "orange", "red"]
+                ),
+                title="Niveau de risque"
+            ),
+            tooltip=[
+                alt.Tooltip("date:T", title="Date"),
+                alt.Tooltip("probability:Q", title="Probabilité", format=".2%"),
+                alt.Tooltip("risk_band:N", title="Risque")
+            ]
+        )
+        .properties(height=350)
+    )
 
-    vib_chart = alt.Chart(df_reset).mark_line(color="green").encode(
-        x='date:T', y='vibration:Q', tooltip=['date:T','vibration:Q']
-    ).properties(height=200, title="Vibration")
+    st.altair_chart(risk_chart, use_container_width=True)
 
-    wind_chart = alt.Chart(df_reset).mark_line(color="orange").encode(
-        x='date:T', y='wind_speed:Q', tooltip=['date:T','wind_speed:Q']
-    ).properties(height=200, title="Vitesse du vent")
+    st.subheader("⚙️ Facteurs techniques observés")
 
-    power_chart = alt.Chart(df_reset).mark_line(color="purple").encode(
-        x='date:T', y='power_output:Q', tooltip=['date:T','power_output:Q']
-    ).properties(height=200, title="Puissance délivrée")
+    def sensor_chart(field, label):
+        return (
+            alt.Chart(last_7_days)
+            .mark_line(point=True)
+            .encode(
+                x="date:T",
+                y=alt.Y(f"{field}:Q", title=label),
+                tooltip=["date:T", f"{field}:Q"]
+            )
+            .properties(height=200)
+        )
 
-    st.altair_chart(prob_chart, use_container_width=True)
-    st.altair_chart(temp_chart, use_container_width=True)
-    st.altair_chart(vib_chart, use_container_width=True)
-    st.altair_chart(wind_chart, use_container_width=True)
-    st.altair_chart(power_chart, use_container_width=True)
-
-    st.markdown("""
-    **Seuils :**
-    - 🟢 Faible : < 40 %
-    - 🟠 Moyen : 40 – 70 %
-    - 🔴 Élevé : > 70 %
-    """)
+    st.altair_chart(sensor_chart("temperature", "Température (°C)"), use_container_width=True)
+    st.altair_chart(sensor_chart("vibration", "Vibration"), use_container_width=True)
+    st.altair_chart(sensor_chart("wind_speed", "Vitesse du vent (m/s)"), use_container_width=True)
+    st.altair_chart(sensor_chart("power_output", "Puissance délivrée (kW)"), use_container_width=True)
 
     st.subheader("📋 Détail des analyses")
-    st.dataframe(df, use_container_width=True)
-else:
-    st.info("Aucune analyse enregistrée pour le moment")
+    st.dataframe(last_7_days, use_container_width=True)
 
-# Informations sur le modèle
+else:
+    st.info("Aucune analyse enregistrée pour le moment.")
+
+# =============================
+# INFORMATIONS SUR LE MODÈLE
+# =============================
 st.divider()
 st.subheader("📚 Informations sur le modèle")
+
 try:
-    response = requests.get(API_URL_MODEL_INFO, headers=get_auth_headers('manager_token'))
+    response = requests.get(API_URL_MODEL_INFO, headers=get_auth_headers("manager_token"))
     if response.status_code == 200:
         model_info = response.json()
         st.markdown(f"""
-        **Modèle :** {model_info['model_name']}
-        **Version :** {model_info['version']}
-        **Description :** {model_info['description']}
-        **Date d'entraînement :** {model_info['training_date']}
+**Modèle :** {model_info['model_name']}  
+**Version :** {model_info['version']}  
+**Description :** {model_info['description']}  
+**Date d'entraînement :** {model_info['training_date']}
 
-        **Performance :**
-        - Accuracy : {model_info['performance_metrics']['accuracy']}
-        - Précision : {model_info['performance_metrics']['precision']}
-        - Recall : {model_info['performance_metrics']['recall']}
-        - F1 Score : {model_info['performance_metrics']['f1_score']}
+**Performance :**
+- Accuracy : {model_info['performance_metrics']['accuracy']}
+- Précision : {model_info['performance_metrics']['precision']}
+- Recall : {model_info['performance_metrics']['recall']}
+- F1 Score : {model_info['performance_metrics']['f1_score']}
 
-        **Caractéristiques :**
-        - {', '.join(model_info['input_features'])}
-        """)
+**Caractéristiques d'entrée :**
+- {', '.join(model_info['input_features'])}
+""")
     else:
-        st.error(f"Erreur lors de la récupération des informations du modèle : {response.status_code}")
+        st.error(f"Erreur récupération infos modèle : {response.status_code}")
 except Exception as e:
-    st.error(f"Impossible de contacter l'API pour obtenir les informations du modèle : {e}")
+    st.error(f"Impossible de contacter l'API modèle : {e}")
 
-# Statistiques
+# =============================
+# STATISTIQUES D’UTILISATION
+# =============================
 st.divider()
 st.subheader("📊 Statistiques d'utilisation")
+
 try:
-    response = requests.get(API_URL_STATS, headers=get_auth_headers('manager_token'))
+    response = requests.get(API_URL_STATS, headers=get_auth_headers("manager_token"))
     if response.status_code == 200:
         stats = response.json()
         col1, col2, col3 = st.columns(3)
-        col1.metric("Temps de disponibilité", stats['uptime'])
-        col2.metric("Requêtes aujourd'hui", stats['model_requests_today'])
+        col1.metric("Temps de disponibilité", stats["uptime"])
+        col2.metric("Requêtes aujourd'hui", stats["model_requests_today"])
         col3.metric("Taux de succès", f"{stats['success_rate'] * 100:.1f}%")
     else:
-        st.error(f"Erreur lors de la récupération des statistiques : {response.status_code}")
+        st.error(f"Erreur récupération statistiques : {response.status_code}")
 except Exception as e:
-    st.error(f"Impossible de contacter l'API pour obtenir les statistiques : {e}")
+    st.error(f"Impossible de contacter l'API statistiques : {e}")

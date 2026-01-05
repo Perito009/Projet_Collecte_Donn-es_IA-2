@@ -1308,3 +1308,287 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
 2025-12-31 13:17:13,503 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:17:13.503542", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2025-12-31 13:17:13,505 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "GET /api/stats HTTP/1.1" 200 -
 2025-12-31 13:17:13,505 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:17:13] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:49:07,778 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-31 13:49:07,778 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-31 13:49:07,778 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-31 13:49:07,778 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-31 13:49:07,778 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-31 13:49:07,778 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-31 13:49:07,778 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-31 13:49:07,778 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2025-12-31 13:49:53,817 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:49:53.817583", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.100000000000016, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 699.94, "maintenance_done": 0}}
+2025-12-31 13:49:53,817 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:49:53.817583", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.100000000000016, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 699.94, "maintenance_done": 0}}
+2025-12-31 13:49:53,818 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:49:53,818 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:49:53,838 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_134953_0924, Risque=Faible, Probabilité=0.000
+2025-12-31 13:49:53,838 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_134953_0924, Risque=Faible, Probabilité=0.000
+2025-12-31 13:49:53,839 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:49:53] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:49:53,839 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:49:53] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:53:25,179 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-31 13:53:25,179 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2025-12-31 13:53:25,179 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-31 13:53:25,179 - __main__ - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
+2025-12-31 13:53:25,179 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-31 13:53:25,179 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-12-31 13:53:25,179 - __main__ - INFO - Nombre de features attendues: 5
+2025-12-31 13:53:25,179 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2025-12-31 13:54:00,639 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:54:00.639267", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.080000000000013, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 13:54:00,639 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:54:00.639267", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.080000000000013, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 13:54:00,640 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:54:00,640 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:54:00,662 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_135400_9429, Risque=Faible, Probabilité=0.000
+2025-12-31 13:54:00,662 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_135400_9429, Risque=Faible, Probabilité=0.000
+2025-12-31 13:54:00,663 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:54:00] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:54:00,663 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:54:00] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:54:31,772 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:54:31.772300", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 24.99, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0999999999999, "maintenance_done": 0}}
+2025-12-31 13:54:31,772 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:54:31.772300", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 24.99, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0999999999999, "maintenance_done": 0}}
+2025-12-31 13:54:31,773 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:54:31,773 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:54:31,802 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_135431_6555, Risque=Faible, Probabilité=0.000
+2025-12-31 13:54:31,802 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_135431_6555, Risque=Faible, Probabilité=0.000
+2025-12-31 13:54:31,802 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:54:31] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:54:31,802 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:54:31] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:55:35,598 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:55:35.598412", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 24.99, "vibration_level": 9.99, "wind_speed": 10.0, "power_output": 700.0999999999999, "maintenance_done": 1}}
+2025-12-31 13:55:35,598 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:55:35.598412", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 24.99, "vibration_level": 9.99, "wind_speed": 10.0, "power_output": 700.0999999999999, "maintenance_done": 1}}
+2025-12-31 13:55:35,599 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:55:35,599 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 13:55:35,616 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_135535_1003, Risque=Moyen, Probabilité=0.478
+2025-12-31 13:55:35,616 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_135535_1003, Risque=Moyen, Probabilité=0.478
+2025-12-31 13:55:35,616 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:55:35] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:55:35,616 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:55:35] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 13:57:27,107 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:57:27.107034", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:57:27,107 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:57:27.107034", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:57:27,107 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:57:27] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:57:27,107 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:57:27] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:57:27,111 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:57:27.111301", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:57:27,111 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:57:27.111301", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:57:27,111 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:57:27] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:57:27,111 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:57:27] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:59:27,622 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:27.622892", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:27,622 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:27.622892", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:27,623 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:27] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:59:27,623 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:27] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:59:27,628 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:27.628017", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:27,628 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:27.628017", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:27,628 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:27] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:59:27,628 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:27] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:59:33,929 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:33.929823", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:33,929 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:33.929823", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:33,930 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:33] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:59:33,930 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:33] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 13:59:33,934 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:33.934585", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:33,934 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T13:59:33.934585", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 13:59:33,935 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:33] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 13:59:33,935 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 13:59:33] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:02:35,652 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:35.652329", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:35,652 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:35.652329", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:35,653 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:35] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:02:35,653 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:35] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:02:35,659 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:35.659185", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:35,659 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:35.659185", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:35,662 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:35] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:02:35,662 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:35] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:02:41,348 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:41.348523", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:02:41,348 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:41.348523", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:02:41,349 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:02:41,349 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:02:41,368 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_140241_3625, Risque=Faible, Probabilité=0.000
+2025-12-31 14:02:41,368 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_140241_3625, Risque=Faible, Probabilité=0.000
+2025-12-31 14:02:41,368 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:41] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:02:41,368 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:41] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:02:41,479 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:41.479501", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:41,479 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:41.479501", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:41,480 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:41] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:02:41,480 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:41] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:02:41,490 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:41.488980", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:41,490 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:02:41.488980", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:02:41,490 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:41] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:02:41,490 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:02:41] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:06,480 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:06.480234", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 20.0, "wind_speed": 10.0, "power_output": 699.9100000000001, "maintenance_done": 0}}
+2025-12-31 14:03:06,480 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:06.480234", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 20.0, "wind_speed": 10.0, "power_output": 699.9100000000001, "maintenance_done": 0}}
+2025-12-31 14:03:06,480 - __main__ - WARNING - Validation des données échouée: Valeur invalide pour vibration_level: 20.0. Doit être un nombre entre 0 et 10
+2025-12-31 14:03:06,480 - __main__ - WARNING - Validation des données échouée: Valeur invalide pour vibration_level: 20.0. Doit être un nombre entre 0 et 10
+2025-12-31 14:03:06,481 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:06] "[31m[1mPOST /api/predict HTTP/1.1[0m" 400 -
+2025-12-31 14:03:06,481 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:06] "[31m[1mPOST /api/predict HTTP/1.1[0m" 400 -
+2025-12-31 14:03:06,569 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:06.569854", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:06,569 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:06.569854", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:06,570 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:06] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:06,570 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:06] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:06,574 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:06.574376", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:06,574 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:06.574376", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:06,575 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:06] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:06,575 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:06] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:20,140 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:20.140030", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 20.0, "wind_speed": 10.0, "power_output": 699.9100000000001, "maintenance_done": 1}}
+2025-12-31 14:03:20,140 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:20.140030", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 20.0, "wind_speed": 10.0, "power_output": 699.9100000000001, "maintenance_done": 1}}
+2025-12-31 14:03:20,140 - __main__ - WARNING - Validation des données échouée: Valeur invalide pour vibration_level: 20.0. Doit être un nombre entre 0 et 10
+2025-12-31 14:03:20,140 - __main__ - WARNING - Validation des données échouée: Valeur invalide pour vibration_level: 20.0. Doit être un nombre entre 0 et 10
+2025-12-31 14:03:20,140 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:20] "[31m[1mPOST /api/predict HTTP/1.1[0m" 400 -
+2025-12-31 14:03:20,140 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:20] "[31m[1mPOST /api/predict HTTP/1.1[0m" 400 -
+2025-12-31 14:03:20,250 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:20.250724", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:20,250 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:20.250724", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:20,254 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:20] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:20,254 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:20] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:20,260 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:20.259985", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:20,260 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:20.259985", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:20,260 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:20] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:20,260 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:20] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:33,591 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:33.591101", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:33,591 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:33.591101", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:33,591 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:33] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:33,591 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:33] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:33,596 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:33.596873", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:33,596 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:33.596873", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:33,597 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:33] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:33,597 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:33] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:47,282 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:47.282079", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:03:47,282 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:47.282079", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:03:47,282 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:03:47,282 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:03:47,300 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_140347_9406, Risque=Faible, Probabilité=0.000
+2025-12-31 14:03:47,300 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_140347_9406, Risque=Faible, Probabilité=0.000
+2025-12-31 14:03:47,301 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:47] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:03:47,301 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:47] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:03:47,381 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:47.381819", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:47,381 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:47.381819", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:47,382 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:47] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:47,382 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:47] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:03:47,385 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:47.385801", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:47,385 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:03:47.385801", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:03:47,386 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:47] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:03:47,386 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:03:47] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:04:01,492 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:04:01.492135", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 7.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 1}}
+2025-12-31 14:04:01,492 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:04:01.492135", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 29.0, "vibration_level": 7.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 1}}
+2025-12-31 14:04:01,492 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:04:01,492 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:04:01,511 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_140401_1004, Risque=Moyen, Probabilité=0.478
+2025-12-31 14:04:01,511 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_140401_1004, Risque=Moyen, Probabilité=0.478
+2025-12-31 14:04:01,511 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:04:01] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:04:01,511 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:04:01] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:04:01,592 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:04:01.592369", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:04:01,592 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:04:01.592369", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:04:01,592 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:04:01] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:04:01,592 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:04:01] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:04:01,596 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:04:01.596247", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:04:01,596 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:04:01.596247", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:04:01,596 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:04:01] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:04:01,596 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:04:01] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:35:31,870 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:31.870310", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:31,870 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:31.870310", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:31,870 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:31] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:35:31,870 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:31] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:35:31,874 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:31.874875", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:31,874 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:31.874875", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:31,875 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:31] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:35:31,875 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:31] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:35:35,892 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:35.892441", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:35:35,892 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:35.892441", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:35:35,893 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:35:35,893 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:35:35,912 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_143535_3625, Risque=Faible, Probabilité=0.000
+2025-12-31 14:35:35,912 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_143535_3625, Risque=Faible, Probabilité=0.000
+2025-12-31 14:35:35,912 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:35] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:35:35,912 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:35] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:35:35,994 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:35.994545", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:35,994 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:35.994545", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:35,995 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:35] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:35:35,995 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:35] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:35:36,000 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:36.000271", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:36,000 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:35:36.000271", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:35:36,000 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:36] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:35:36,000 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:35:36] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:36:05,155 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:36:05.155842", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.07000000000001, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 699.7700000000002, "maintenance_done": 1}}
+2025-12-31 14:36:05,155 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:36:05.155842", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.07000000000001, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 699.7700000000002, "maintenance_done": 1}}
+2025-12-31 14:36:05,156 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:36:05,156 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:36:05,176 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_143605_2565, Risque=Faible, Probabilité=0.000
+2025-12-31 14:36:05,176 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_143605_2565, Risque=Faible, Probabilité=0.000
+2025-12-31 14:36:05,177 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:36:05] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:36:05,177 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:36:05] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:36:05,256 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:36:05.256124", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:36:05,256 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:36:05.256124", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:36:05,256 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:36:05] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:36:05,256 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:36:05] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:36:05,260 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:36:05.260064", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:36:05,260 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:36:05.260064", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:36:05,260 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:36:05] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:36:05,260 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:36:05] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:44:04,389 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:04.389462", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:04,389 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:04.389462", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:04,390 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:04] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:44:04,390 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:04] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:44:04,393 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:04.393649", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:04,393 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:04.393649", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:04,394 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:04] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:44:04,394 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:04] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:44:08,637 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.637790", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:44:08,637 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.637790", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2025-12-31 14:44:08,638 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:44:08,638 - __main__ - INFO - Features préparées: (1, 5)
+2025-12-31 14:44:08,657 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_144408_3625, Risque=Faible, Probabilité=0.000
+2025-12-31 14:44:08,657 - __main__ - INFO - Prédiction réussie: ID=pred_20251231_144408_3625, Risque=Faible, Probabilité=0.000
+2025-12-31 14:44:08,658 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:44:08,658 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "POST /api/predict HTTP/1.1" 200 -
+2025-12-31 14:44:08,736 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.736362", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:08,736 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.736362", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:08,736 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:44:08,736 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "GET /api/model-info HTTP/1.1" 200 -
+2025-12-31 14:44:08,741 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.741710", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:08,741 - __main__ - INFO - Requête API: {"timestamp": "2025-12-31T14:44:08.741710", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2025-12-31 14:44:08,742 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "GET /api/stats HTTP/1.1" 200 -
+2025-12-31 14:44:08,742 - werkzeug - INFO - 127.0.0.1 - - [31/Dec/2025 14:44:08] "GET /api/stats HTTP/1.1" 200 -
