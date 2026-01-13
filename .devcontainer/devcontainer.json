@@ -17,10 +17,13 @@
       ]
     }
   },
+  // Use the 'postCreateCommand' to run commands after the container is created.
   "updateContentCommand": "[ -f packages.txt ] && sudo apt update && sudo apt upgrade -y && sudo xargs apt install -y <packages.txt; [ -f requirements.txt ] && pip3 install --user -r requirements.txt; pip3 install --user streamlit; echo '✅ Packages installed and Requirements met'",
+  //Use postAttachCommand to run commands after the container is created and attached.
   "postAttachCommand": {
-    "server": "streamlit run streamlit_api.py --server.enableCORS false --server.enableXsrfProtection false"
+    "server": "./main_project.sh"
   },
+
   "portsAttributes": {
     "8501": {
       "label": "Application",

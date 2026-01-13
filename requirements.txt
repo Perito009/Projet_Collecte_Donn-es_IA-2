@@ -9,3 +9,4 @@ streamlit
 pytest
 matplotlib
 altair
+Mlflow
