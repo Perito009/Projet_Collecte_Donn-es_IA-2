@@ -19,18 +19,21 @@
   },
   // Use the 'postCreateCommand' to run commands after the container is created.
   "updateContentCommand": "[ -f packages.txt ] && sudo apt update && sudo apt upgrade -y && sudo xargs apt install -y <packages.txt; [ -f requirements.txt ] && pip3 install --user -r requirements.txt; pip3 install --user streamlit; echo '✅ Packages installed and Requirements met'",
-  //Use postAttachCommand to run commands after the container is created and attached.
   "postAttachCommand": {
     "server": "./main_project.sh"
   },
-
   "portsAttributes": {
     "8501": {
       "label": "Application",
       "onAutoForward": "openPreview"
+    },
+    "5000": {
+      "label": "API Server",
+      "onAutoForward": "openPreview"
     }
   },
   "forwardPorts": [
-    8501
+    8501,
+    5000
   ]
 }

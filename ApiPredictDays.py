@@ -7,10 +7,9 @@ import pandas as pd
 import joblib
 import json
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime
 from functools import wraps
 from typing import Dict, Any, Optional, Tuple
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_httpauth import HTTPTokenAuth
@@ -84,7 +83,7 @@ def load_model():
 
     try:
         # Utiliser le fichier fourni
-        model_path = 'Model_B/model_classification.pkl'
+        model_path = 'Model_A/model_classification.pkl'
 
         # Chargement du modèle avec joblib
         model = joblib.load(model_path)

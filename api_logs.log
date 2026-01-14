@@ -1834,3 +1834,516 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
 2026-01-05 14:36:34,413 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_B/model_classification.pkl
 2026-01-05 14:36:34,415 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
 2026-01-05 14:36:34,415 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-13 12:50:37,098 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 12:50:37,098 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-13 12:50:37,133 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.54:5000
+2026-01-13 12:50:37,133 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.54:5000
+2026-01-13 12:50:37,133 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-13 12:50:37,133 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-13 12:50:49,975 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 12:50:49] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 12:50:49,975 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 12:50:49] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 12:50:50,356 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 12:50:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-13 12:50:50,356 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 12:50:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-13 12:51:33,297 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 12:51:33] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 12:51:33,297 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 12:51:33] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 13:55:06,159 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 13:55:06,159 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-13 13:55:06,195 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.182:5000
+2026-01-13 13:55:06,195 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.182:5000
+2026-01-13 13:55:06,195 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-13 13:55:06,195 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-13 13:56:18,680 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 13:56:18,680 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:07:28,762 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:07:28] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:07:28,762 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:07:28] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:07:55,742 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:07:55] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:07:55,742 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:07:55] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:08:02,465 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:02] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:08:02,465 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:02] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:08:43,439 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:43.439264", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:43,439 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:43.439264", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:43,440 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:43] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:08:43,440 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:43] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:08:43,443 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:43.443320", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:43,443 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:43.443320", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:43,443 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:43] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:08:43,443 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:43] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:08:59,260 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:59.260802", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2026-01-13 14:08:59,260 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:59.260802", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"temperature": 25.0, "vibration_level": 3.0, "wind_speed": 10.0, "power_output": 700.0, "maintenance_done": 0}}
+2026-01-13 14:08:59,261 - __main__ - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-13 14:08:59,261 - __main__ - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-13 14:08:59,261 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:59] "[35m[1mPOST /api/predict HTTP/1.1[0m" 503 -
+2026-01-13 14:08:59,261 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:59] "[35m[1mPOST /api/predict HTTP/1.1[0m" 503 -
+2026-01-13 14:08:59,267 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:59.267219", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:59,267 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:59.267219", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:59,268 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:59] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:08:59,268 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:59] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:08:59,271 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:59.271599", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:59,271 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:08:59.271599", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:08:59,272 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:59] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:08:59,272 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:08:59] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:10:55,831 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:10:55,831 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:11:50,268 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:11:50.268204", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:11:50,268 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:11:50.268204", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:11:50,268 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:11:50] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:11:50,268 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:11:50] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:11:50,273 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:11:50.273232", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:11:50,273 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:11:50.273232", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:11:50,273 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:11:50] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:11:50,273 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:11:50] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:12:21,100 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:12:21,100 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:12:55,945 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:12:55,945 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:14:10,444 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:15:44,433 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:16:09,352 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:26:02,109 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:26:02] "[33mPOST /predict_failure HTTP/1.1[0m" 404 -
+2026-01-13 14:26:02,109 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:26:02] "[33mPOST /predict_failure HTTP/1.1[0m" 404 -
+2026-01-13 14:26:19,590 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:26:19,590 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:26:53,415 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:26:53.415383", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:26:53,415 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:26:53.415383", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:26:53,416 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:26:53] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:26:53,416 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:26:53] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-13 14:26:53,420 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:26:53.420044", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:26:53,420 - __main__ - INFO - Requête API: {"timestamp": "2026-01-13T14:26:53.420044", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-13 14:26:53,420 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:26:53] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:26:53,420 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:26:53] "GET /api/stats HTTP/1.1" 200 -
+2026-01-13 14:31:01,646 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:31:01] "[31m[1mPOST /api/stats HTTP/1.1[0m" 405 -
+2026-01-13 14:31:01,646 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:31:01] "[31m[1mPOST /api/stats HTTP/1.1[0m" 405 -
+2026-01-13 14:33:53,201 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:33:53] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:33:53,201 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 14:33:53] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-13 14:34:35,439 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:34:35,439 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:35:25,901 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-13 14:35:25,901 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-13 14:36:27,035 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-14 09:46:48,779 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-14 09:46:48,779 - __main__ - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-14 09:46:48,819 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.207:5000
+2026-01-14 09:46:48,819 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.207:5000
+2026-01-14 09:46:48,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 09:46:48,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 09:47:37,165 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:47:37.165139", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:47:37,165 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:47:37.165139", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:47:37,166 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:47:37] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 09:47:37,166 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:47:37] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 09:47:37,169 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:47:37.169630", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:47:37,169 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:47:37.169630", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:47:37,170 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:47:37] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 09:47:37,170 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:47:37] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 09:53:39,580 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:53:39.580743", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:53:39,580 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:53:39.580743", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:53:39,581 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:53:39] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 09:53:39,581 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:53:39] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 09:53:39,585 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:53:39.585504", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:53:39,585 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:53:39.585504", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:53:39,585 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:53:39] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 09:53:39,585 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:53:39] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 09:54:25,793 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-14 09:54:25,793 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-14 09:54:25,794 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-14 09:54:25,794 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-14 09:54:25,794 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-14 09:54:25,794 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-14 09:54:25,794 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-14 09:54:25,794 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-14 09:54:40,596 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:54:40] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-14 09:54:40,596 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:54:40] "[33mGET / HTTP/1.1[0m" 404 -
+2026-01-14 09:54:40,853 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:54:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-14 09:54:40,853 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:54:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-14 09:55:06,169 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:55:06.169515", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:55:06,169 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:55:06.169515", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:55:06,170 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:55:06] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 09:55:06,170 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:55:06] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 09:55:06,174 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:55:06.174153", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:55:06,174 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T09:55:06.174153", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 09:55:06,174 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:55:06] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 09:55:06,174 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 09:55:06] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 10:00:26,860 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-14 10:00:26,861 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-14 10:00:26,861 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-14 10:00:26,861 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-14 10:02:10,605 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-14 10:02:10,605 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-14 10:02:10,606 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-14 10:02:10,606 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-14 10:02:10,614 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.207:5000
+2026-01-14 10:02:10,615 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 10:03:13,524 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-14 10:03:13,524 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-14 10:03:13,525 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-14 10:03:13,525 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-14 10:03:13,525 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-14 10:03:13,525 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-14 10:03:13,525 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-14 10:03:13,525 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-14 10:03:13,530 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.207:5000
+2026-01-14 10:03:13,530 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.207:5000
+2026-01-14 10:03:13,530 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 10:03:13,530 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 10:03:52,046 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T10:03:52.046458", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 10:03:52,046 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T10:03:52.046458", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 10:03:52,047 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 10:03:52] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 10:03:52,047 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 10:03:52] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-14 10:03:52,051 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T10:03:52.051707", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 10:03:52,051 - __main__ - INFO - Requête API: {"timestamp": "2026-01-14T10:03:52.051707", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-14 10:03:52,052 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 10:03:52] "GET /api/stats HTTP/1.1" 200 -
+2026-01-14 10:03:52,052 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 10:03:52] "GET /api/stats HTTP/1.1" 200 -
