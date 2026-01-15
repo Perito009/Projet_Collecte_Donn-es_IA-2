@@ -8,6 +8,7 @@ import argparse
 import requests
 import json
 import sys
+import random
 from datetime import datetime, timedelta
 from typing import Dict, List
 
@@ -229,7 +230,6 @@ def predict_7_days(token: str, turbine_id: str, base_params: Dict):
     """Génère et prédit sur 7 jours"""
     print_header(f"Prédictions sur 7 jours - Turbine {turbine_id}")
     
-    import random
     turbines = []
     start_date = datetime.now()
     

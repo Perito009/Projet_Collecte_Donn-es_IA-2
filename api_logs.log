@@ -2382,3 +2382,5 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
 2026-01-15 09:35:01,459 - __main__ - INFO - Features préparées: (1, 5)
 2026-01-15 09:35:01,485 - __main__ - INFO - Prédiction réussie: ID=pred_20260115_093501_5822, Risque=Faible, Probabilité=0.005
 2026-01-15 09:35:01,485 - werkzeug - INFO - 127.0.0.1 - - [15/Jan/2026 09:35:01] "POST /api/predict HTTP/1.1" 200 -
+2026-01-15 09:37:48,142 - __main__ - INFO - Requête API: {"timestamp": "2026-01-15T09:37:48.142636", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-15 09:37:48,143 - werkzeug - INFO - 127.0.0.1 - - [15/Jan/2026 09:37:48] "GET /api/health HTTP/1.1" 200 -

@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 import altair as alt
+import random
 from auth import require_role
 
 # =============================
@@ -73,7 +74,6 @@ if submit:
         day_date = start_date + timedelta(days=day)
         
         # Variation simulée des paramètres
-        import random
         temp_offset = random.uniform(-temp_variation, temp_variation)
         vib_offset = random.uniform(-vibration_variation, vibration_variation)
         wind_offset = random.uniform(-2, 2)
