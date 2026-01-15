@@ -5,7 +5,6 @@ Ce script montre comment intégrer le CLI dans un système d'automatisation
 """
 
 import subprocess
-import json
 import sys
 from datetime import datetime
 

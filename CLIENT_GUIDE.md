@@ -23,6 +23,9 @@ L'interface Streamlit offre une expérience visuelle complète pour interagir av
 #### Lancement
 
 ```bash
+#Démarer les deux en même temps
+./main_project.sh
+
 # Démarrer l'API (dans un terminal)
 python ApiPredictDays.py
 

@@ -2384,3 +2384,39 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
 2026-01-15 09:35:01,485 - werkzeug - INFO - 127.0.0.1 - - [15/Jan/2026 09:35:01] "POST /api/predict HTTP/1.1" 200 -
 2026-01-15 09:37:48,142 - __main__ - INFO - Requête API: {"timestamp": "2026-01-15T09:37:48.142636", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
 2026-01-15 09:37:48,143 - werkzeug - INFO - 127.0.0.1 - - [15/Jan/2026 09:37:48] "GET /api/health HTTP/1.1" 200 -
+2026-01-15 10:24:19,536 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-15 10:24:19,536 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-15 10:24:19,536 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-15 10:24:19,536 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-15 10:24:19,536 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-15 10:24:19,536 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-15 10:24:19,536 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-15 10:24:19,536 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
