@@ -28,6 +28,7 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Démarrage Rapide
+Soit vous pouvez demarer le back et le front avec bash: ./main_project.sh ou alors suivre les steps ci-dessous
 
 ### 1. Démarrer l'API
 
