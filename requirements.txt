@@ -10,3 +10,5 @@ pytest
 matplotlib
 altair
 Mlflow
+selenium
+webdriver-manager

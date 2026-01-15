@@ -2420,3 +2420,39 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
  * Debug mode: off
 Address already in use
 Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-15 10:52:16,776 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-15 10:52:16,776 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-15 10:52:16,781 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-15 10:52:16,781 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-15 10:52:16,782 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-15 10:52:16,782 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-15 10:52:16,782 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-15 10:52:16,782 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.

@@ -189,6 +189,30 @@ pytest test/
 └── test/                      # Tests
 ```
 
+## 🧪 Tests end-to-end Streamlit (Selenium)
+
+```bash
+# Installer les dépendances 
+pip install requirements.txt
+
+# Installer Google Chrome dans votre container ou machine pour les test celenium
+
+sudo apt-get update
+sudo apt-get install -y wget gnupg2
+wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/google-linux.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-linux.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update
+sudo apt-get install -y google-chrome-stable
+
+# Exécuter les tests (depuis la racine du projet)
+cd ..
+pytest test/test_streamlit_e2e.py -v
+```
+
+Notes :
+- `STREAMLIT_BASE_URL` peut pointer vers une URL déployée si besoin.
+- Le test utilise Chrome headless via `webdriver-manager`; assurez-vous que `chromium-browser`/`chrome` est disponible dans le conteneur.
+
 ## 📝 License
 
 MIT License

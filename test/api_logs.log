@@ -14,3 +14,44 @@
 2026-01-05 13:41:26,767 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:41:26.767565", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
 2026-01-05 13:41:26,772 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-05T13:41:26.772163", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2026-01-05 13:41:26,774 - ApiPredictDays - ERROR - Fichier modèle non trouvé: Model_B/model_classification.pkl
+2026-01-15 10:47:01,065 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 10:47:01,076 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:47:01,161 - WDM - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+2026-01-15 10:47:01,222 - WDM - INFO - Driver downloading response is 200
+2026-01-15 10:47:01,260 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:47:01,389 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:47:01,430 - WDM - INFO - Driver has been saved in cache [/home/codespace/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+2026-01-15 10:48:24,412 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 10:48:24,423 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:48:24,483 - WDM - INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+2026-01-15 10:48:24,526 - WDM - INFO - Driver downloading response is 200
+2026-01-15 10:48:24,562 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:48:24,704 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:48:24,746 - WDM - INFO - Driver has been saved in cache [/home/codespace/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+2026-01-15 10:51:34,148 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 10:51:34,591 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:51:34,661 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:51:34,693 - WDM - INFO - There is no [linux64] chromedriver "144.0.7559.31" for browser google-chrome "144.0.7559" in cache
+2026-01-15 10:51:34,693 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:51:34,797 - WDM - INFO - WebDriver version 144.0.7559.31 selected
+2026-01-15 10:51:34,802 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.31/linux64/chromedriver-linux64.zip
+2026-01-15 10:51:34,802 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.31/linux64/chromedriver-linux64.zip
+2026-01-15 10:51:34,942 - WDM - INFO - Driver downloading response is 200
+2026-01-15 10:51:35,667 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:51:35,815 - WDM - INFO - Driver has been saved in cache [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.31]
+2026-01-15 10:52:31,735 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 10:52:31,794 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:52:31,864 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:52:31,898 - WDM - INFO - Driver [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.31/chromedriver-linux64/chromedriver] found in cache
+2026-01-15 10:55:04,923 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 10:55:04,984 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:55:05,025 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:55:05,058 - WDM - INFO - Driver [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.31/chromedriver-linux64/chromedriver] found in cache
+2026-01-15 10:59:28,395 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 10:59:28,457 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:59:28,500 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 10:59:28,545 - WDM - INFO - Driver [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.31/chromedriver-linux64/chromedriver] found in cache
+2026-01-15 11:08:06,104 - WDM - INFO - ====== WebDriver manager ======
+2026-01-15 11:08:06,167 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 11:08:06,212 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 11:08:06,248 - WDM - INFO - Driver [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.31/chromedriver-linux64/chromedriver] found in cache
