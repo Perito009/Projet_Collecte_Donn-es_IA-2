@@ -30,6 +30,7 @@ st.info(f"Connecté en tant que **{st.session_state.role}**")
 pg = st.navigation([
     st.Page("log.py", title="📝 Logs"),
     st.Page("mesures_capteurs.py", title="📈 Mesures capteurs"),
-    st.Page("historiques.py", title="📊 Historique & risques")
+    st.Page("historiques.py", title="📊 Historique & risques"),
+    st.Page("batch_predictions.py", title="🔮 Prédictions 7 jours")
 ])
 pg.run()
