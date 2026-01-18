@@ -21,7 +21,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "${{ matrix.python-version }}"
 
       - name: Install Google Chrome
         run: |
@@ -45,5 +45,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-${{ matrix.python-version }}-
 
+      - name: Start Streamlit app
+        run: |
+          nohup streamlit run main.py --server.headless true &
+          sleep 10
+
       - name: Run tests
-        run: pytest -q
+        run: pytest
