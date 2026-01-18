@@ -47,7 +47,7 @@ jobs:
 
       - name: Start Streamlit app
         run: |
-          nohup streamlit run main.py --server.headless true &
+          nohup streamlit run app/main.py --server.headless true &
           sleep 10
 
       - name: Run tests
