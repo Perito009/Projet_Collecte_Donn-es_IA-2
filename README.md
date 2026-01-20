@@ -121,29 +121,8 @@ Ce script montre comment :
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────────────────────────────┐
-│         Utilisateurs                     │
-│  Managers | Techniciens | Scripts       │
-└──────────┬──────────────┬───────────────┘
-           │              │
-    ┌──────▼──────┐  ┌───▼─────┐
-    │  Streamlit  │  │   CLI   │
-    │     Web     │  │  Client │
-    └──────┬──────┘  └───┬─────┘
-           │             │
-           └──────┬──────┘
-                  │
-         ┌────────▼────────┐
-         │   Flask API     │
-         │  Port 5000      │
-         └────────┬────────┘
-                  │
-         ┌────────▼────────┐
-         │  ML Model       │
-         │ Random Forest   │
-         └─────────────────┘
-```
+<img width="547" height="575" alt="image" src="https://github.com/user-attachments/assets/db74c0c2-cc3f-4512-aa0c-4ccb5082eb06" />
+
 
 ## 🔑 Endpoints API
 
@@ -212,12 +191,6 @@ pytest test/test_streamlit_e2e.py -v
 Notes :
 - `STREAMLIT_BASE_URL` peut pointer vers une URL déployée si besoin.
 - Le test utilise Chrome headless via `webdriver-manager`; assurez-vous que `chromium-browser`/`chrome` est disponible dans le conteneur.
-
-## 📝 License
-
-MIT License
-
-## 👥 Contributeurs
 
 - EnergiTech Team
 
