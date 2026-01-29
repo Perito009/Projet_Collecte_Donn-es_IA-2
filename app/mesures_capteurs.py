@@ -18,7 +18,7 @@ st.dataframe(df.head(), use_container_width=True)
 # Sélection des colonnes numériques
 df_numeric = df.select_dtypes(include=["int64", "float64"])
 
-# Statistiques des variables numériques
+# Statistiques des capteurs
 st.subheader("Statistiques des capteurs")
 
 # Vérifier que les colonnes requises existent
@@ -54,15 +54,15 @@ else:
         color = sensor_info['color']
         
         # Calculer les statistiques
-        min_val = df[col_name].min()
-        avg_val = df[col_name].mean()
-        max_val = df[col_name].max()
+        min_val = df_numeric[col_name].min()
+        avg_val = df_numeric[col_name].mean()
+        max_val = df_numeric[col_name].max()
         
         # Créer les données pour le graphique
         stats_df = pd.DataFrame({
             'Statistique': ['Minimum', 'Moyenne', 'Maximum'],
             'Valeur': [min_val, avg_val, max_val],
-            'Couleur': ['#90CAF9', color, '#EF5350']
+            'Couleur': ['#90CAF9', color, '#FF6B6B']
         })
         
         # Créer le graphique en barres horizontales avec Altair
@@ -70,8 +70,8 @@ else:
             alt.Chart(stats_df)
             .mark_bar()
             .encode(
-                x=alt.X('Valeur:Q', title='Valeur', scale=alt.Scale(domain=[0, max_val * 1.1])),
-                y=alt.Y('Statistique:N', title='', sort=['Maximum', 'Moyenne', 'Minimum']),
+                x=alt.X('Valeur:Q', title='Valeur', scale=alt.Scale(domain=[0, max(max_val * 1.1, 0.1)])),
+                y=alt.Y('Statistique:N', title='', sort=['Minimum', 'Moyenne', 'Maximum']),
                 color=alt.Color('Couleur:N', scale=None, legend=None),
                 tooltip=[
                     alt.Tooltip('Statistique:N', title='Statistique'),
