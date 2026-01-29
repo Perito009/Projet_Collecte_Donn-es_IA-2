@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import altair as alt
 from auth import require_role
 
 require_role(["technicien", "manager"])
@@ -19,7 +20,55 @@ df_numeric = df.select_dtypes(include=["int64", "float64"])
 
 # Évolution des variables numériques
 st.subheader("Évolution des variables numériques")
-st.line_chart(df_numeric, height=350, use_container_width=True)
+
+# Ajouter un index pour visualisation temporelle
+df_indexed = df_numeric.reset_index()
+df_indexed = df_indexed.rename(columns={'index': 'measurement_id'})
+
+# Fonction pour créer un graphique interactif avec Altair
+def create_interactive_chart(data, y_field, y_title, color='steelblue'):
+    chart = (
+        alt.Chart(data)
+        .mark_line(point=True)
+        .encode(
+            x=alt.X('measurement_id:Q', title='Mesure', axis=alt.Axis(format='d')),
+            y=alt.Y(f'{y_field}:Q', title=y_title),
+            tooltip=[
+                alt.Tooltip('measurement_id:Q', title='Mesure'),
+                alt.Tooltip(f'{y_field}:Q', title=y_title, format='.2f')
+            ]
+        )
+        .properties(
+            height=250
+        )
+        .configure_mark(
+            color=color,
+            opacity=0.8
+        )
+        .interactive()
+    )
+    return chart
+
+# Créer 2 colonnes pour diviser les graphiques
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("##### 💨 Vitesse du vent")
+    wind_chart = create_interactive_chart(df_indexed, 'wind_speed', 'Vitesse du vent (m/s)', '#1f77b4')
+    st.altair_chart(wind_chart, use_container_width=True)
+    
+    st.markdown("##### 🌡️ Température")
+    temp_chart = create_interactive_chart(df_indexed, 'temperature', 'Température (°C)', '#ff7f0e')
+    st.altair_chart(temp_chart, use_container_width=True)
+
+with col2:
+    st.markdown("##### 📳 Niveau de vibration")
+    vib_chart = create_interactive_chart(df_indexed, 'vibration_level', 'Niveau de vibration', '#2ca02c')
+    st.altair_chart(vib_chart, use_container_width=True)
+    
+    st.markdown("##### ⚡ Production d'énergie")
+    power_chart = create_interactive_chart(df_indexed, 'power_output', 'Production d\'énergie (kW)', '#d62728')
+    st.altair_chart(power_chart, use_container_width=True)
 
 # Visualisations supplémentaires
 st.subheader("Visualisations supplémentaires")
