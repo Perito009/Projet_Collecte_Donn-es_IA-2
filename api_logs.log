@@ -2456,3 +2456,55 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
  * Debug mode: off
 Address already in use
 Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+2026-01-29 15:00:20,393 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-29 15:00:20,393 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-29 15:00:20,394 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-29 15:00:20,394 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-29 15:00:20,394 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-29 15:00:20,394 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-29 15:00:20,394 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-29 15:00:20,394 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-29 15:00:20,407 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.77:5000
+2026-01-29 15:00:20,407 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.77:5000
+2026-01-29 15:00:20,407 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-29 15:00:20,407 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-29 15:01:21,033 - __main__ - INFO - Requête API: {"timestamp": "2026-01-29T15:01:21.032899", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-29 15:01:21,033 - __main__ - INFO - Requête API: {"timestamp": "2026-01-29T15:01:21.032899", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-29 15:01:21,034 - werkzeug - INFO - 127.0.0.1 - - [29/Jan/2026 15:01:21] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-29 15:01:21,034 - werkzeug - INFO - 127.0.0.1 - - [29/Jan/2026 15:01:21] "GET /api/model-info HTTP/1.1" 200 -
+2026-01-29 15:01:21,038 - __main__ - INFO - Requête API: {"timestamp": "2026-01-29T15:01:21.038082", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-29 15:01:21,038 - __main__ - INFO - Requête API: {"timestamp": "2026-01-29T15:01:21.038082", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-29 15:01:21,039 - werkzeug - INFO - 127.0.0.1 - - [29/Jan/2026 15:01:21] "GET /api/stats HTTP/1.1" 200 -
+2026-01-29 15:01:21,039 - werkzeug - INFO - 127.0.0.1 - - [29/Jan/2026 15:01:21] "GET /api/stats HTTP/1.1" 200 -

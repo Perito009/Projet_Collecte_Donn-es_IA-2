@@ -42,10 +42,10 @@ with st.form("batch_prediction_form"):
     
     col1, col2, col3 = st.columns(3)
     
-    base_temperature = col1.number_input("🌡️ Température de base (°C)", value=25.0, min_value=-20.0, max_value=60.0)
-    base_vibration = col2.number_input("📳 Niveau de vibration de base", value=3.0, min_value=0.0, max_value=10.0)
-    base_wind_speed = col3.number_input("💨 Vitesse du vent de base (m/s)", value=10.0, min_value=0.0, max_value=50.0)
-    base_power_output = col1.number_input("⚡ Puissance de base (kW)", value=700.0, min_value=0.0, max_value=2000.0)
+    base_temperature = col1.slider("🌡️ Température de base (°C)", min_value=-20.0, max_value=60.0, value=25.0, step=0.1)
+    base_vibration = col2.slider("📳 Niveau de vibration de base", min_value=0.0, max_value=10.0, value=3.0, step=0.1)
+    base_wind_speed = col3.slider("💨 Vitesse du vent de base (m/s)", min_value=0.0, max_value=50.0, value=10.0, step=0.1)
+    base_power_output = col1.slider("⚡ Puissance de base (kW)", min_value=0.0, max_value=2000.0, value=700.0, step=10.0)
     base_maintenance = col2.selectbox(
         "🔧 Maintenance récente",
         options=[0, 1],

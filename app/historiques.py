@@ -40,10 +40,10 @@ st.subheader("🔍 Nouvelle analyse de risque")
 with st.form("prediction_form"):
     col1, col2, col3 = st.columns(3)
 
-    temperature = col1.number_input("🌡️ Température (°C)", value=25.0)
-    vibration = col2.number_input("📳 Vibration", value=3.0)
-    wind_speed = col3.number_input("💨 Vitesse du vent (m/s)", value=10.0)
-    power_output = col1.number_input("⚡ Puissance délivrée (kW)", value=700.0)
+    temperature = col1.slider("🌡️ Température (°C)", min_value=-20.0, max_value=60.0, value=25.0, step=0.1)
+    vibration = col2.slider("📳 Vibration", min_value=0.0, max_value=10.0, value=3.0, step=0.1)
+    wind_speed = col3.slider("💨 Vitesse du vent (m/s)", min_value=0.0, max_value=50.0, value=10.0, step=0.1)
+    power_output = col1.slider("⚡ Puissance délivrée (kW)", min_value=0.0, max_value=2000.0, value=700.0, step=10.0)
     maintenance_done = col2.selectbox(
         "🔧 Maintenance récente",
         options=[0, 1],
