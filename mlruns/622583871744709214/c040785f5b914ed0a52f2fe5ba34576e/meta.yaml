@@ -1,0 +1,14 @@
+artifact_uri: file:///workspaces/Projet_Collecte_Donn-es_IA-2/mlruns/622583871744709214/c040785f5b914ed0a52f2fe5ba34576e/artifacts
+end_time: 1769963878673
+entry_point_name: ''
+experiment_id: '622583871744709214'
+lifecycle_stage: active
+run_id: c040785f5b914ed0a52f2fe5ba34576e
+run_name: Model_B_DecisionTree_Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769963876416
+status: 3
+tags: []
+user_id: codespace

@@ -1,0 +1,6 @@
+artifact_location: file:///workspaces/Projet_Collecte_Donn-es_IA-2/mlruns/622583871744709214
+creation_time: 1769963876410
+experiment_id: '622583871744709214'
+last_update_time: 1769963876410
+lifecycle_stage: active
+name: Turbine_Time_to_Failure_Prediction_Regression

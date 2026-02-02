@@ -1,0 +1,10 @@
+artifact_location: file:///workspaces/Projet_Collecte_Donn-es_IA-2/mlruns/414469776123975359/models/m-cfe954caa0754560b2cf9343ce2cc634/artifacts
+creation_timestamp: 1769963763965
+experiment_id: '414469776123975359'
+last_updated_timestamp: 1769963767380
+model_id: m-cfe954caa0754560b2cf9343ce2cc634
+model_type: null
+name: classification_model
+source_run_id: 4c11e00d79e742fb9bcbc482241f102b
+status: 2
+status_message: null

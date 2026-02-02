@@ -1,0 +1,14 @@
+artifact_uri: file:///workspaces/Projet_Collecte_Donn-es_IA-2/mlruns/414469776123975359/b6071540bb774dbd81958e45fef66628/artifacts
+end_time: 1769963908566
+entry_point_name: ''
+experiment_id: '414469776123975359'
+lifecycle_stage: active
+run_id: b6071540bb774dbd81958e45fef66628
+run_name: Model_A_DecisionTree_Classification
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769963905743
+status: 3
+tags: []
+user_id: codespace

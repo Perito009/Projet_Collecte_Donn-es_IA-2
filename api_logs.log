@@ -2508,3 +2508,121 @@ Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
 2026-01-29 15:01:21,038 - __main__ - INFO - Requête API: {"timestamp": "2026-01-29T15:01:21.038082", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
 2026-01-29 15:01:21,039 - werkzeug - INFO - 127.0.0.1 - - [29/Jan/2026 15:01:21] "GET /api/stats HTTP/1.1" 200 -
 2026-01-29 15:01:21,039 - werkzeug - INFO - 127.0.0.1 - - [29/Jan/2026 15:01:21] "GET /api/stats HTTP/1.1" 200 -
+2026-01-30 20:06:06,219 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.218938", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-30 20:06:06,226 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.226179", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:06:06,227 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.227858", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-30 20:06:06,228 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-30 20:06:06,233 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260130_200606_9427, Risque=Élevé, Probabilité=0.900
+2026-01-30 20:06:06,235 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.235441", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:06:06,236 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.236893", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-30 20:06:06,237 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-30 20:06:06,238 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.238447", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-30 20:06:06,238 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-30 20:06:06,240 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.239996", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-30 20:06:06,242 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.242557", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-30 20:06:06,245 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:06:06.245422", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:06:06,246 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-30 20:06:06,247 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-30 20:06:06,247 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-30 20:06:06,247 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-30 20:06:06,257 - WDM - INFO - ====== WebDriver manager ======
+2026-01-30 20:06:13,451 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:06:13,501 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:06:13,535 - WDM - INFO - There is no [linux64] chromedriver "144.0.7559.109" for browser google-chrome "144.0.7559" in cache
+2026-01-30 20:06:13,536 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:06:13,645 - WDM - INFO - WebDriver version 144.0.7559.109 selected
+2026-01-30 20:06:13,649 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.109/linux64/chromedriver-linux64.zip
+2026-01-30 20:06:13,649 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.109/linux64/chromedriver-linux64.zip
+2026-01-30 20:06:13,702 - WDM - INFO - Driver downloading response is 200
+2026-01-30 20:06:13,747 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:06:13,903 - WDM - INFO - Driver has been saved in cache [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.109]
+2026-01-30 20:07:32,177 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-30 20:07:32,177 - __main__ - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-30 20:07:32,177 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-30 20:07:32,177 - __main__ - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-30 20:07:32,177 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-30 20:07:32,177 - __main__ - INFO - Type de modèle: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2026-01-30 20:07:32,177 - __main__ - INFO - Nombre de features attendues: 5
+2026-01-30 20:07:32,177 - __main__ - INFO - Nombre de features attendues: 5
+Chargement du modèle de classification EnergiTech...
+Le modèle n'a pas pu être chargé. L'API fonctionnera en mode dégradé.
+
+============================================================
+🚀 API de Maintenance Prédictive - EnergiTech
+============================================================
+
+📊 Modèle: Random Forest Classifier - EnergiTech
+📈 Performance: Accuracy=1
+📈 Performance: Recall=0.75
+
+🔐 Tokens d'authentification:
+   technician_token: tech_2024_energitech
+   manager_token: manager_2024_energitech
+   data_scientist_token: ds_2024_energitech
+
+🌐 Endpoints disponibles:
+   GET  /api/health       - Vérifier l'état de l'API
+   GET  /api/model-info   - Informations sur le modèle (authentifié)
+   POST /api/predict      - Prédiction unique (authentifié)
+   POST /api/batch-predict - Prédiction par lot (authentifié)
+   GET  /api/stats        - Statistiques (authentifié)
+
+👤 Headers requis: Authorization: Bearer <token>
+ * Serving Flask app 'ApiPredictDays'
+ * Debug mode: off
+2026-01-30 20:07:32,185 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.188:5000
+2026-01-30 20:07:32,185 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.188:5000
+2026-01-30 20:07:32,185 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-30 20:07:32,185 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-30 20:07:48,125 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.125713", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-30 20:07:48,131 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.131615", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:07:48,133 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.133443", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-30 20:07:48,134 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-30 20:07:48,134 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260130_200748_3032, Risque=Élevé, Probabilité=0.900
+2026-01-30 20:07:48,136 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.136470", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:07:48,138 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.137953", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-30 20:07:48,138 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-30 20:07:48,139 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.139850", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-30 20:07:48,140 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-30 20:07:48,144 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.143811", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-30 20:07:48,146 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.146558", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-30 20:07:48,149 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:07:48.149230", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:07:48,150 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-30 20:07:48,150 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-30 20:07:48,150 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-30 20:07:48,151 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-30 20:07:48,158 - WDM - INFO - ====== WebDriver manager ======
+2026-01-30 20:07:48,231 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:07:48,297 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:07:48,336 - WDM - INFO - Driver [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.109/chromedriver-linux64/chromedriver] found in cache
+2026-01-30 20:10:00,948 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.948460", "endpoint": "health_check", "method": "GET", "user": "127.0.0.1", "token_provided": false, "params": null, "body": null}
+2026-01-30 20:10:00,953 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.953351", "endpoint": "model_info", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:10:00,955 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.955192", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 1, "power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-30 20:10:00,955 - ApiPredictDays - INFO - Features préparées: (1, 5)
+2026-01-30 20:10:00,956 - ApiPredictDays - INFO - Prédiction réussie: ID=pred_20260130_201000_5992, Risque=Élevé, Probabilité=0.900
+2026-01-30 20:10:00,957 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.957628", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:10:00,959 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.959153", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"power_output": 900, "temperature": 20, "vibration_level": 2, "wind_speed": 15}}
+2026-01-30 20:10:00,959 - ApiPredictDays - WARNING - Validation des données échouée: Feature manquante: maintenance_done
+2026-01-30 20:10:00,961 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.961232", "endpoint": "predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"maintenance_done": 0, "power_output": 500, "temperature": 10, "vibration_level": 1, "wind_speed": 10}}
+2026-01-30 20:10:00,961 - ApiPredictDays - ERROR - Tentative de prédiction sans modèle chargé
+2026-01-30 20:10:00,962 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.962916", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"maintenance_done": 1, "power_output": 900, "temperature": 20, "turbine_id": "t1", "vibration_level": 2, "wind_speed": 14}, {"maintenance_done": 0, "power_output": 700, "temperature": 15, "turbine_id": "t2", "vibration_level": 1, "wind_speed": 8}]}}
+2026-01-30 20:10:00,965 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.965090", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {}}
+2026-01-30 20:10:00,968 - ApiPredictDays - INFO - Requête API: {"timestamp": "2026-01-30T20:10:00.968187", "endpoint": "get_stats", "method": "GET", "user": "127.0.0.1", "token_provided": true, "params": null, "body": null}
+2026-01-30 20:10:00,969 - ApiPredictDays - INFO - Features extraites du modèle: ['wind_speed', 'vibration_level', 'temperature', 'power_output', 'maintenance_done']
+2026-01-30 20:10:00,969 - ApiPredictDays - INFO - Modèle chargé avec succès depuis Model_A/model_classification.pkl
+2026-01-30 20:10:00,969 - ApiPredictDays - INFO - Type de modèle: <class 'test_model_loading.test_model_load_success.<locals>.Dummy'>
+2026-01-30 20:10:00,970 - ApiPredictDays - INFO - Nombre de features attendues: 5
+2026-01-30 20:10:00,977 - WDM - INFO - ====== WebDriver manager ======
+2026-01-30 20:10:01,041 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:10:01,081 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-30 20:10:01,120 - WDM - INFO - Driver [/home/codespace/.wdm/drivers/chromedriver/linux64/144.0.7559.109/chromedriver-linux64/chromedriver] found in cache
+2026-01-30 20:13:42,998 - __main__ - INFO - Requête API: {"timestamp": "2026-01-30T20:13:42.998176", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"turbine_id": "WIND-001_J1", "wind_speed": 10.071546577023458, "vibration_level": 3.016511164333269, "temperature": 26.403452179108612, "power_output": 741.4359042870037, "maintenance_done": 0}, {"turbine_id": "WIND-001_J2", "wind_speed": 9.2501672255871, "vibration_level": 3.2510383151735747, "temperature": 23.352939386466133, "power_output": 723.943412002204, "maintenance_done": 0}, {"turbine_id": "WIND-001_J3", "wind_speed": 9.635923052722372, "vibration_level": 3.4280100174178174, "temperature": 26.95691473026332, "power_output": 778.0445725667284, "maintenance_done": 0}, {"turbine_id": "WIND-001_J4", "wind_speed": 11.821580961807916, "vibration_level": 3.015088111772471, "temperature": 26.16014418015364, "power_output": 762.1741059394726, "maintenance_done": 0}, {"turbine_id": "WIND-001_J5", "wind_speed": 10.55434991567363, "vibration_level": 3.165285219843321, "temperature": 24.723722448614883, "power_output": 661.8534755525666, "maintenance_done": 0}, {"turbine_id": "WIND-001_J6", "wind_speed": 9.69202512933687, "vibration_level": 2.8613858224619033, "temperature": 24.395597855329232, "power_output": 761.6962471972317, "maintenance_done": 0}, {"turbine_id": "WIND-001_J7", "wind_speed": 8.862320707772795, "vibration_level": 2.8874070190727945, "temperature": 24.027401137252575, "power_output": 682.0916829310734, "maintenance_done": 0}]}}
+2026-01-30 20:13:42,998 - __main__ - INFO - Requête API: {"timestamp": "2026-01-30T20:13:42.998176", "endpoint": "batch_predict", "method": "POST", "user": "127.0.0.1", "token_provided": true, "params": null, "body": {"turbines": [{"turbine_id": "WIND-001_J1", "wind_speed": 10.071546577023458, "vibration_level": 3.016511164333269, "temperature": 26.403452179108612, "power_output": 741.4359042870037, "maintenance_done": 0}, {"turbine_id": "WIND-001_J2", "wind_speed": 9.2501672255871, "vibration_level": 3.2510383151735747, "temperature": 23.352939386466133, "power_output": 723.943412002204, "maintenance_done": 0}, {"turbine_id": "WIND-001_J3", "wind_speed": 9.635923052722372, "vibration_level": 3.4280100174178174, "temperature": 26.95691473026332, "power_output": 778.0445725667284, "maintenance_done": 0}, {"turbine_id": "WIND-001_J4", "wind_speed": 11.821580961807916, "vibration_level": 3.015088111772471, "temperature": 26.16014418015364, "power_output": 762.1741059394726, "maintenance_done": 0}, {"turbine_id": "WIND-001_J5", "wind_speed": 10.55434991567363, "vibration_level": 3.165285219843321, "temperature": 24.723722448614883, "power_output": 661.8534755525666, "maintenance_done": 0}, {"turbine_id": "WIND-001_J6", "wind_speed": 9.69202512933687, "vibration_level": 2.8613858224619033, "temperature": 24.395597855329232, "power_output": 761.6962471972317, "maintenance_done": 0}, {"turbine_id": "WIND-001_J7", "wind_speed": 8.862320707772795, "vibration_level": 2.8874070190727945, "temperature": 24.027401137252575, "power_output": 682.0916829310734, "maintenance_done": 0}]}}
+2026-01-30 20:13:43,116 - werkzeug - INFO - 127.0.0.1 - - [30/Jan/2026 20:13:43] "POST /api/batch-predict HTTP/1.1" 200 -
+2026-01-30 20:13:43,116 - werkzeug - INFO - 127.0.0.1 - - [30/Jan/2026 20:13:43] "POST /api/batch-predict HTTP/1.1" 200 -

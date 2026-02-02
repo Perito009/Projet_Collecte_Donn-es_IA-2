@@ -1,0 +1,18 @@
+CLASSIFICATION REPORT - MODÈLE A
+======================================================================
+
+              precision    recall  f1-score   support
+
+Pas de panne       0.99      0.99      0.99       888
+       Panne       0.36      0.42      0.38        12
+
+    accuracy                           0.98       900
+   macro avg       0.67      0.70      0.69       900
+weighted avg       0.98      0.98      0.98       900
+
+
+MATRICE DE CONFUSION
+======================================================================
+                     Prédit: Pas de panne Prédit: Panne       
+Réel: Pas de panne                    879                    9
+Réel: Panne                             7                    5

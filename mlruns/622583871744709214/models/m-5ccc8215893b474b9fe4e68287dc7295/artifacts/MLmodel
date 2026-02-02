@@ -1,0 +1,22 @@
+artifact_path: file:///workspaces/Projet_Collecte_Donn-es_IA-2/mlruns/622583871744709214/models/m-5ccc8215893b474b9fe4e68287dc7295/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.8.1
+model_id: m-5ccc8215893b474b9fe4e68287dc7295
+model_size_bytes: 75749
+model_uuid: m-5ccc8215893b474b9fe4e68287dc7295
+prompts: null
+run_id: c040785f5b914ed0a52f2fe5ba34576e
+utc_time_created: '2026-02-01 16:37:56.444111'

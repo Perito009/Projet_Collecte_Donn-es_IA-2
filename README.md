@@ -1,16 +1,17 @@
 # Projet_Collecte_Donn-es_IA-2
 
-## 🚀 Système de Maintenance Prédictive pour Éoliennes - EnergiTech
+## Système de Maintenance Prédictive pour Éoliennes - EnergiTech
 
 Ce projet fournit une solution complète de maintenance prédictive pour les éoliennes, incluant :
+
 - Une API REST Flask pour les prédictions
 - Une interface web Streamlit pour la visualisation
 - Un client CLI pour l'automatisation
 - Un modèle de Machine Learning (Random Forest) pour détecter les pannes
 
-## 📋 Table des Matières
+## Table des Matières
 
-1. [Installation](#installation)
+1. [Installation](#-installation)
 2. [Démarrage Rapide](#démarrage-rapide)
 3. [Interfaces Disponibles](#interfaces-disponibles)
 4. [Documentation](#documentation)
@@ -27,11 +28,13 @@ cd Projet_Collecte_Donn-es_IA-2
 pip install -r requirements.txt
 ```
 
-## 🚀 Démarrage Rapide
+## Démarrage Rapide
+
 Soit vous pouvez demarer le back et le front avec le .sh ou alors suivre les steps ci-dessous
+
 ```bash
 python ./main_project.sh
-``` 
+```
 
 ### 1. Démarrer l'API
 
@@ -64,29 +67,33 @@ streamlit run main.py
 L'interface sera disponible sur `http://localhost:8501`
 
 **Identifiants:**
+
 - Manager: `manager` / `manager123`
 - Technicien: `technicien` / `tech123`
 
-## 🎯 Interfaces Disponibles
+## Interfaces Disponibles
 
 ### 1. 🌐 Interface Web Streamlit
 
 Interface graphique complète avec :
+
 - **📝 Logs** - Consultation des journaux système
 - **📈 Mesures capteurs** - Visualisation des données en temps réel
 - **📊 Historique & risques** - Analyse et graphiques de risque
 - **🔮 Prédictions 7 jours** - Prédictions par lot sur 7 jours *(NOUVEAU)*
 
 #### Page Prédictions 7 jours
+
 - Configuration des paramètres de base
 - Visualisation interactive des risques
 - Statistiques détaillées
 - Export CSV
 - Recommandations automatiques
 
-### 2. 💻 Client CLI
+### 2.  Client CLI
 
 Outil en ligne de commande pour :
+
 - Vérification de l'état de l'API
 - Prédictions uniques
 - Prédictions sur 7 jours
@@ -94,6 +101,7 @@ Outil en ligne de commande pour :
 - Intégration dans des scripts d'automatisation
 
 **Commandes disponibles:**
+
 ```bash
 cli_client.py health              # État de l'API
 cli_client.py predict [options]   # Prédiction unique
@@ -101,28 +109,29 @@ cli_client.py predict-7days [options]  # 7 jours
 cli_client.py model-info          # Info modèle
 ```
 
-### 3. 🔄 Script d'Automatisation
+### 3. Script d'Automatisation
 
 Exemple d'intégration dans un système de surveillance :
+
 ```bash
 python example_automation.py
 ```
 
 Ce script montre comment :
+
 - Surveiller plusieurs turbines automatiquement
 - Générer des rapports de synthèse
 - Déclencher des alertes selon les niveaux de risque
 
-## 📚 Documentation
+## Documentation
 
 - **[CLIENT_GUIDE.md](CLIENT_GUIDE.md)** - Guide complet d'utilisation des interfaces
 - **[swagger.yaml](swagger.yaml)** - Documentation de l'API REST
 - **api_logs.log** - Logs de l'API
 
-## 🏗️ Architecture
+## Architecture
 
-<img width="547" height="575" alt="image" src="https://github.com/user-attachments/assets/db74c0c2-cc3f-4512-aa0c-4ccb5082eb06" />
-
+![Architecture diagram](https://github.com/user-attachments/assets/db74c0c2-cc3f-4512-aa0c-4ccb5082eb06)
 
 ## 🔑 Endpoints API
 
@@ -135,20 +144,21 @@ Ce script montre comment :
 ## 🔐 Authentification
 
 Tokens disponibles :
-- `tech_2024_energitech` - Technicien
-- `manager_2024_energitech` - Manager
-- `ds_2024_energitech` - Data Scientist
+
+- `tech_2024_energitech`
+- `manager_2024_energitech`
+- `ds_2024_energitech`
 
 Headers requis : `Authorization: Bearer <token>`
 
-## 📊 Modèle ML
+## Modèle ML
 
 - **Type** : Random Forest Classifier
 - **Prédiction** : Panne dans les 7 prochains jours
 - **Features** : wind_speed, vibration_level, temperature, power_output, maintenance_done
 - **Performance** : Accuracy 63%, Recall 83%
 
-## 🛠️ Développement
+## Développement
 
 ```bash
 # Tests
@@ -171,7 +181,7 @@ pytest test/
 ## 🧪 Tests end-to-end Streamlit (Selenium)
 
 ```bash
-# Installer les dépendances 
+# Installer les dépendances
 pip install requirements.txt
 
 # Installer Google Chrome dans votre container ou machine pour les test celenium
@@ -189,11 +199,6 @@ pytest test/test_streamlit_e2e.py -v
 ```
 
 Notes :
+
 - `STREAMLIT_BASE_URL` peut pointer vers une URL déployée si besoin.
 - Le test utilise Chrome headless via `webdriver-manager`; assurez-vous que `chromium-browser`/`chrome` est disponible dans le conteneur.
-
-- EnergiTech Team
-
-## 📞 Support
-
-Pour toute question, consulter le [CLIENT_GUIDE.md](CLIENT_GUIDE.md) ou les logs dans `api_logs.log`.

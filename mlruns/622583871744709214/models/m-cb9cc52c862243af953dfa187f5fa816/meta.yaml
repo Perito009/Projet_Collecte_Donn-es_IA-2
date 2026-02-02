@@ -1,0 +1,10 @@
+artifact_location: file:///workspaces/Projet_Collecte_Donn-es_IA-2/mlruns/622583871744709214/models/m-cb9cc52c862243af953dfa187f5fa816/artifacts
+creation_timestamp: 1769963908622
+experiment_id: '622583871744709214'
+last_updated_timestamp: 1769963910789
+model_id: m-cb9cc52c862243af953dfa187f5fa816
+model_type: null
+name: regression_model
+source_run_id: d2a2d764ab7741e3b85d5f1043713723
+status: 2
+status_message: null
